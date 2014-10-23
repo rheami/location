@@ -1,0 +1,12 @@
+creer A 2 2 ;
+creer B 0 1 ;
+reserver A A 0j_01h00m 0j_02h00m ;
+reserver A A 0j_01h00m 0j_02h00m ;
+reserver A A 0j_01h00m 0j_02h00m ;
+reserver A A 0j_01h00m 0j_02h00m ;
+reserver A B 0j_03h00m 0j_04h00m ;
+reserver A B 0j_03h00m 0j_04h00m ;
+reserver B A 0j_05h00m 0j_06h00m ;
+reserver B A 0j_05h00m 0j_06h00m ;
+
+
