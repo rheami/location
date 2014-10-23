@@ -14,25 +14,23 @@
 
 Date::Date()
 {
-  // À compléter
 }
 
 bool Date::operator <(const Date& d) const{
-    // À compléter : comparer *this (l'objet courant) < d.
-    return false;
+    return minutes < d.minutes;
 }
 
 bool Date::operator <=(const Date& d) const{
-    // À compléter : comparer *this (l'objet courant) <= d.
-    return false;
+    return minutes <= d.minutes;
 }
 
 std::ostream& operator << (std::ostream& os, const Date& d){
     int jours, heures, minutes;
-    // À compléter
-    // jours = ...
-    // heures = ...
-    // minutes = ...
+
+    jours = d.minutes / (60 * 24);
+    heures = (d.minutes % (60 * 24)) /60;
+    minutes = d.minutes % 60;
+
     char chaine[40];
     sprintf(chaine, "%dj_%02dh%02dm", jours, heures, minutes);
     os << chaine;
@@ -47,22 +45,9 @@ std::istream& operator >> (std::istream& is, Date& d){
     assert(j=='j');
     assert(underscore=='_');
     assert(h=='h' && m=='m');
-
-    // À compléter : utiliser les variable jours,heures,minutes pour modifier l'objet d.
+    d.minutes = minutes + heures * 60 + jours * 60 * 24;
 
 
     return is;
-}
-
-std::ostream& operator << (std::ostream& os, const Intervalle& i){
-  os << i.debut  << i.fin;
-  return os;
-}
-
-std::istream& operator >> (std::istream& is, Intervalle& i){
-  char crochetgauche, crochetdroit, virgule;
-  is >> crochetgauche >> i.debut >> virgule >> i.fin >> crochetdroit;
-  assert(crochetgauche=='[' && virgule==',' && crochetdroit==']');
-  return is;
 }
 

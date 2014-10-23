@@ -13,7 +13,7 @@ class Succursale{
   public:
     // À compléter...
 
-    Succursale(String _nom, int _nbVoitures, int _nbPlacesLibres) {
+    Succursale(std::string _nom, int _nbVoitures, int _nbPlacesLibres) {
         nomSuccursale = _nom;
         nbVoitures = _nbVoitures;
         nbPlacesLibres = _nbPlacesLibres;
@@ -26,7 +26,7 @@ class Succursale{
 
 private:
 // À compléter...
-    String nomSuccursale;
+    std::string nomSuccursale;
     int nbVoitures;
     int nbPlacesLibres;
     int nbPlaces;

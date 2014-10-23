@@ -12,7 +12,6 @@
 
 #include <iostream>
 
-// À compléter.
 class Date{
   public:
     Date();
@@ -21,7 +20,7 @@ class Date{
     bool operator <=(const Date& date) const;
   
   private:
-    
+    int minutes;
     
   friend std::ostream& operator << (std::ostream&, const Date& date);
   friend std::istream& operator >> (std::istream&, Date& date);

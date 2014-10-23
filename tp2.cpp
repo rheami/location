@@ -9,6 +9,7 @@
 #include <iostream>
 #include <string>
 #include "succ.h"
+#include "date.h"
 using namespace std;
 
 int tp2(istream& entree){
