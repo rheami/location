@@ -281,18 +281,17 @@ void ArbreAVL<T>::copier(const Noeud *source, Noeud *&noeud) const {
 
     if (source == NULL) return;
 
+    assert(noeud == NULL);
+    noeud = new Noeud(source->contenu);
+    noeud->equilibre = source->equilibre;
+
     if (source->gauche != NULL) {
         //
-        T element = source->gauche->contenu;
-        int equilibre = source->gauche->equilibre;
-        noeud = new Noeud(element);
-        copier(source->gauche, noeud);
+        copier(source->gauche, noeud->gauche);
     }
     if (source->droite != NULL) {
-        T element = source->droite->contenu;
-        int equilibre = source->droite->equilibre;
-        noeud = new Noeud(element);
-        copier(source->droite, noeud);
+
+        copier(source->droite, noeud->droite);
     }
 }
 
@@ -434,10 +433,7 @@ template<class T>
 ArbreAVL<T> &ArbreAVL<T>::operator=(const ArbreAVL &autre) {
     if (this == &autre) return *this;
     vider();
-    //copier(autre.racine, racine);
-    for(Iterateur iter = autre.debut();iter;iter++){
-        inserer(iter.courant->contenu);
-    }
+    copier(autre.racine, racine);
 
     return *this;
 }
@@ -458,7 +454,7 @@ ArbreAVL<T>::Iterateur::Iterateur(const ArbreAVL<T>::Iterateur &a)
 // Pré-incrément
 template<class T>
 typename ArbreAVL<T>::Iterateur &ArbreAVL<T>::Iterateur::operator++() {
-    // À compléter.
+
     assert(courant);
     Noeud* suivant = courant->droite;
     while(suivant) {
