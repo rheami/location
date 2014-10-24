@@ -195,22 +195,63 @@ void ArbreAVL<T>::enlever(const T &element) {
 
 template<class T>
 bool ArbreAVL<T>::enlever(const T &element, Noeud *&noeud) {
-    if (element < noeud->contenu) {
+    if (element < noeud->contenu) {  // chercher a gauche
         if (enlever(element, noeud->gauche)) {
-            if (noeud->gauche->contenu == element) {
-// todo
-            }
+            noeud->equilibre--;
+            if (noeud->equilibre == 0) return false;
+            if (noeud->equilibre == -1) return true;
+            assert(noeud->equilibre == -2); // reequilibrage requis
+            if (noeud->droite->equilibre == 1) // cas double rotation
+                rotationDroite(noeud->droite);
+            rotationGauche(noeud); // rotation gauche pour equilibrer n
         }
+        return false;
     }
-    else if (element > noeud->contenu) {
-        // todo ...
+    else if (element > noeud->contenu) { // chercher a droite
+        if (enlever(element, noeud->droite)) {
+            noeud->equilibre++; // +1 a gauche = +1
+            //std::cout << "equilibre = " << noeud->equilibre << std::endl;
+            if (noeud->equilibre == 0) return false; // le sous-arbre n a la meme hauteur
+            if (noeud->equilibre == 1) return true; // le sous-arbre n a grandi en hauteur
+            assert(noeud->equilibre == 2); // reequilibrage requis
+            if (noeud->gauche->equilibre == -1) // cas double rotation
+                rotationGauche(noeud->gauche); // rotation gauche du fils gauch
+            rotationDroite(noeud); // rotation droite pour equilibrer n
+        }
+        return false;
     }
-    else if (element == noeud->contenu) {
+    else if (element == noeud->contenu) { // enlever le noeud
+        // cas 1 : pas d'enfants
         if (noeud->gauche == NULL && noeud->droite == NULL) {
             delete noeud;
-            return false;
+            return true;
         }
-        else { //todo
+        // cas 2 : un enfant a droite
+        else if (noeud->gauche == NULL) {
+            Noeud *temp = noeud;
+            noeud = temp->droite;
+            delete temp;
+            return true;
+        }
+        // cas 3 : un enfant a gauche
+        else if (noeud->droite == NULL) {
+            Noeud *temp = noeud;
+            noeud = temp->gauche;
+            delete temp;
+            return true;
+        }
+        // cas 4 : deux enfants
+        else {
+            // cherche le plus grand a gauche//todo
+            Noeud *temp = noeud->gauche;
+            while (temp->droite != NULL)
+                temp = temp->droite;
+            // echanche les deux noeuds
+            T &element =  noeud->contenu;
+            noeud->contenu = temp->contenu;
+            temp->contenu = element;
+            // enlever le noeud (pas delete car on doit ajuster les equilibres des parents)
+            enlever(element, noeud);
             return true;
         }
     }
@@ -286,11 +327,9 @@ void ArbreAVL<T>::copier(const Noeud *source, Noeud *&noeud) const {
     noeud->equilibre = source->equilibre;
 
     if (source->gauche != NULL) {
-        //
         copier(source->gauche, noeud->gauche);
     }
     if (source->droite != NULL) {
-
         copier(source->droite, noeud->droite);
     }
 }
