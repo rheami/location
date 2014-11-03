@@ -40,12 +40,10 @@ int tp2(istream& entree){
             //todo tester si elles existent
             
             if (succursaleO.verifierDisponibilite(debut, fin) &&
-                succursaleF.verifierRetourPossible(<#(Date)#>)) {
+                succursaleF.verifierRetourPossible(fin)) {
                 succursaleO.ajouterEvenementDepart(debut);
                 succursaleF.ajouterEvenementRetour(fin);
             }
-            
-            
             
             cout << (ok ? "Acceptee" : "NonDispo") << endl;
         }else{

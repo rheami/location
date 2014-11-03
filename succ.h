@@ -15,12 +15,12 @@ class Succursale{
         nbVoitures = _nbVoitures;
         nbPlacesLibres = _nbPlacesLibres;
         nbPlaces = nbVoitures + nbPlacesLibres;
-
     }
 
     bool verifierDisponibilite(Date, Date);
     bool verifierRetourPossible(Date);
-
+    void ajouterEvenementDepart(Date);
+    void ajouterEvenementRetour(Date);
 
     string getName() const;
 
@@ -35,16 +35,14 @@ private:
     int nbVoitures;
     int nbPlacesLibres;
     int nbPlaces;
-    class Etat {
+    /*
+     Une reservation = deux évenements :
+      1) prendre voiture a une date : la valeur  est -1 : nbVoiture -1 et NbPlaceLibre +1
+      2) raporter voiture a une date : la valeur est +1 : nbVoiture +1 et NbPlaceLibre -1
+      Si un autre évènement a lieu pour la même date on ajoute ou retire 1 (devient +2 etc)
 
-    public:
-        int V;
-        int L;
-    };
-    map<Date, Etat> evenements; // ne fnctne pas il y a plusieur evements de meme date
-
-    void ajouterEvenementDepart(Date);
-    void ajouterEvenementRetour(Date);
+     */
+    map<Date, int> evenements;
 
     friend istream& operator >> (istream& is, Succursale&);
     friend ostream& operator << (ostream& os, const Succursale);
