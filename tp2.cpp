@@ -8,33 +8,43 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include <map>
 #include "succ.h"
 #include "date.h"
 using namespace std;
 
 int tp2(istream& entree){
     // À compléter...
+    map<string, Succursale> succursales;
     
     int id=1;
     while(entree){
+        Succursale succursale;
         std::string commande;
         entree >> commande >> ws;
         if(!entree) break;
         cout << id << " : ";
        
         if(commande=="creer"){
-            string nom;
-            int nbVoitures=0, nbPlacesLibres=0;
-            // À compléter...
-            
-            
-            cout << "Creee"  << endl;
+            entree >> succursale;
+            succursales[succursale.getName()] = succursale;
+            cout << "Creee"  << succursale << endl;
         }else if(commande=="reserver"){
             string origine, destination;
             Date debut, fin;
             entree >> origine >> destination >> debut >> fin;
             bool ok = false;
             // À compléter...
+            Succursale &succursaleO = succursales[origine];
+            Succursale &succursaleF = succursales[destination];
+            //todo tester si elles existent
+            
+            if (succursaleO.verifierDisponibilite(debut, fin) &&
+                succursaleF.verifierRetourPossible(<#(Date)#>)) {
+                succursaleO.ajouterEvenementDepart(debut);
+                succursaleF.ajouterEvenementRetour(fin);
+            }
+            
             
             
             cout << (ok ? "Acceptee" : "NonDispo") << endl;
@@ -65,7 +75,7 @@ int main(int argc, const char** argv){
          }
          return tp2(entree_fichier);
     }else
-         return tp2(std::cin);        
+         return tp2(std::cin);
 
     return 0;
 }

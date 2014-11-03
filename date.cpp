@@ -38,7 +38,7 @@ std::ostream& operator << (std::ostream& os, const Date& d){
 }
 
 std::istream& operator >> (std::istream& is, Date& d){
-    char chaine[40];
+    // char chaine[40];
     int jours, heures, minutes;
     char j, m, h, underscore;
     is >> jours >> j >> underscore >> heures >> h >> minutes >> m;
@@ -46,8 +46,6 @@ std::istream& operator >> (std::istream& is, Date& d){
     assert(underscore=='_');
     assert(h=='h' && m=='m');
     d.minutes = minutes + heures * 60 + jours * 60 * 24;
-
-
     return is;
 }
 
