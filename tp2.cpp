@@ -43,6 +43,7 @@ int tp2(istream& entree){
                 succursaleF.verifierRetourPossible(fin)) {
                 succursaleO.ajouterEvenementDepart(debut);
                 succursaleF.ajouterEvenementRetour(fin);
+                ok = true;
             }
             
             cout << (ok ? "Acceptee" : "NonDispo") << endl;
