@@ -80,9 +80,14 @@ public:
     public:
         Iterateur(const ArbreAVL &a);
 
-        Iterateur(const Iterateur &a);
+		Iterateur(const Iterateur &a)
+			: arbre_associe(a.arbre_associe) {
+			courant = a.courant;
+			chemin = a.chemin;
+		}
 
         Iterateur(const ArbreAVL &a, Noeud *c);
+
 
         operator bool() const;
 
@@ -483,12 +488,6 @@ ArbreAVL<T>::Iterateur::Iterateur(const ArbreAVL &a)
         : arbre_associe(a), courant(NULL) {
 }
 
-template<class T>
-ArbreAVL<T>::Iterateur::Iterateur(const ArbreAVL<T>::Iterateur &a)
-        : arbre_associe(a.arbre_associe) {
-    courant = a.courant;
-    chemin = a.chemin;
-}
 
 // Pré-incrément
 template<class T>
