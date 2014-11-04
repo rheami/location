@@ -1,8 +1,6 @@
 #include "succ.h"
 #include <map>
 #include <assert.h>
-// À compléter...
-
 using namespace std;
 
 string Succursale::getName() const{
@@ -12,7 +10,7 @@ string Succursale::getName() const{
 bool Succursale::verifierDisponibilite(Date prise, Date retour){
     bool dispo=true;
     int nbVoit = nbVoitures;
-    cout << "verifier diponibilite " << nomSuccursale << prise << retour << ": V = " << nbVoit << ", L = " << nbPlacesLibres << endl;
+    //cout << "verifier diponibilite " << nomSuccursale << prise << retour << ": V = " << nbVoit << ", L = " << nbPlacesLibres << endl;
 
     if (evenements.size() == 0) {
         dispo = nbVoitures > 0;
@@ -21,7 +19,7 @@ bool Succursale::verifierDisponibilite(Date prise, Date retour){
         // la voiture doit etre disponible pour la duree !!
         for (it = evenements.begin(); it != evenements.end(); ++it) {
             nbVoit += it->second;
-            cout << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << endl;
+            //cout << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << endl;
             if (it->first < prise) {
                 assert(nbVoit >= 0);
             } else if (nbVoit < 1) {
@@ -40,7 +38,7 @@ bool Succursale::verifierDisponibilite(Date prise, Date retour){
 bool Succursale::verifierRetourPossible(Date retour){
     bool retourOk = true;
     int nbLibre = nbPlacesLibres;
-    cout << "verifier retour " << nomSuccursale << retour << ": V = " << nbVoitures << ", L = " << nbLibre << endl;
+    //cout << "verifier retour " << nomSuccursale << retour << ": V = " << nbVoitures << ", L = " << nbLibre << endl;
 
     if (evenements.size() == 0) {
         retourOk = nbPlacesLibres > 0;
@@ -50,7 +48,7 @@ bool Succursale::verifierRetourPossible(Date retour){
         // la place doit etre disponible a partir de retour jusqua la fin des evenements actuels  !!
         for (it = evenements.begin(); it != evenements.end(); ++it) {
             nbLibre -= it->second;
-            cout << "V = " << nbPlaces - nbLibre << ", L = " << nbLibre << endl;
+            //cout << "V = " << nbPlaces - nbLibre << ", L = " << nbLibre << endl;
             if (it->first < retour) {
                 assert(nbLibre >= 0);
             } else if (nbLibre < 1) {
@@ -69,7 +67,6 @@ void Succursale::ajouterEvenementDepart(Date date) {
 void Succursale::ajouterEvenementRetour(Date date){
     evenements[date] += 1;
 }
-
 
 istream& operator >> (istream& is, Succursale& succursale) {
     is >> succursale.nomSuccursale >> succursale.nbVoitures >> succursale.nbPlacesLibres;

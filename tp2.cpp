@@ -9,12 +9,14 @@
 #include <iostream>
 #include <string>
 #include <map>
+#include "arbremap.h"
 #include "succ.h"
 #include "date.h"
 using namespace std;
 
 int tp2(istream& entree){
-    // À compléter...
+
+    //ArbreMap<std::string, Succursale> succursales;
     map<string, Succursale> succursales;
     
     int id=1;
@@ -28,13 +30,16 @@ int tp2(istream& entree){
         if(commande=="creer"){
             entree >> succursale;
             succursales[succursale.getName()] = succursale;
-            cout << "Creee"  << succursale << endl;
+            cout << "Creee" << endl;
         }else if(commande=="reserver"){
             string origine, destination;
             Date debut, fin;
             entree >> origine >> destination >> debut >> fin;
             bool ok = false;
-            // À compléter...
+            if (fin < debut) {
+                cout << "Commande '" << commande << " " << debut << " " << fin << "' invalide!" << endl;
+                return 2;
+            }
             Succursale &succursaleO = succursales[origine];
             Succursale &succursaleF = succursales[destination];
             //todo tester si elles existent
@@ -51,6 +56,8 @@ int tp2(istream& entree){
             cout << "Commande '" << commande << "' invalide!" << endl;
             return 2;
         }
+
+        // todo deplacer
         char pointvigule=0;
         entree >> pointvigule >> ws;
         if(pointvigule!=';'){

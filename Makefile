@@ -6,11 +6,12 @@
 
 # L'option -g permet de générer les infos de débogage.
 # Décommentez la ligne suivante si vous désirez utiliser un débogueur.
-OPTIONS = -g -O0 -Wall -std=c++11
+#OPTIONS = -g -O0 -Wall -std=c++11
+
 
 # Les options -O, -O1, -O2, -O3 permetent d'optimiser le code binaire produit.
 # Décommentez la ligne suivante si avant la remise finale
-#OPTIONS = -I ../../../lib3105/ -O2 -Wall -std=c++11
+OPTIONS = -I ../../../lib3105/ -O2 -Wall -std=c++11
 
 all: tp2
 
