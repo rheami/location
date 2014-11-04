@@ -20,7 +20,7 @@ int tp2(istream& entree){
     filestr.open ("logfile");
     psbuf = filestr.rdbuf();
     clog.rdbuf(psbuf);
-
+    clog << "allo" << endl;
     //ArbreMap<std::string, Succursale> succursales; // todo utiliser arbremap
     map<string, Succursale> succursales;
     
@@ -40,7 +40,7 @@ int tp2(istream& entree){
             string origine, destination;
             Date debut, fin;
             entree >> origine >> destination >> debut >> fin;
-            clog << commande << " " << origine << destination << debut << fin << endl;
+            clog << id << " " << commande << " " << origine <<  " " << destination << " " << debut << " " << fin << endl << endl;
             bool ok = false;
             if (fin < debut) {
                 cout << "Commande '" << commande << " " << debut << " " << fin << "' invalide!" << endl;
