@@ -27,10 +27,8 @@ class Succursale{
     ~Succursale() {
     }
 
-
-
 private:
-// À compléter...
+
     string nomSuccursale;
     int nbVoitures;
     int nbPlacesLibres;
@@ -42,6 +40,7 @@ private:
       Si un autre évènement a lieu pour la même date on ajoute ou retire 1 (devient +2 etc)
 
      */
+    //ArbreMap<Date, int> evenements; // todo utiliser arbremap
     map<Date, int> evenements;
 
     friend istream& operator >> (istream& is, Succursale&);

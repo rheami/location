@@ -1,0 +1,33 @@
+#Machine :  localhost.localdomain .
+#Date début : 20141104_033606.
+#Limite de 60 secondes par test.
+Taille des fichiers source :
+   51   165  1165 date.cpp
+   93   448  3175 succ.cpp
+  445  1360 12455 test_arbreavl.cpp
+  118   330  2809 test_arbremap.cpp
+   41   195  1569 testdate.cpp
+   95   298  2857 tp2.cpp
+  556  1600 14518 arbreavl.h
+   94   233  2036 arbremap.h
+   30    74   603 date.h
+  141   376  2931 pile.h
+   52   153  1306 succ.h
+ 1716  5232 45424 total
+#
+Test    	Taille	Opt?	CPU	Mém.(k)
+testC-00.txt	15	OK	0.00	2640k
+testC+00.txt	15	OK	0.00	2636k
+testC-01.txt	126	Echec	0.00	2788k
+testC+01.txt	110	Echec	0.00	2616k
+testC-02.txt	1026	Echec	0.05	2688k
+testC+02.txt	1026	Echec	0.04	2660k
+testC+03.txt	2026	Echec	0.15	2660k
+testD-00.txt	15	Echec	0.00	2624k
+testD+00.txt	15	Echec	0.00	2612k
+testD-01.txt	110	Echec	0.00	2788k
+testD+01.txt	110	Echec	0.00	2544k
+testD-02.txt	1026	Echec	0.00	2600k
+testD+02.txt	1026	Echec	0.00	2664k
+testD+03.txt	1100	Echec	0.00	2576k
+testD+04.txt	3000	Echec	0.00	2816k

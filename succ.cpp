@@ -10,24 +10,31 @@ string Succursale::getName() const{
 bool Succursale::verifierDisponibilite(Date prise, Date retour){
     bool dispo=true;
     int nbVoit = nbVoitures;
-    //cout << "verifier diponibilite " << nomSuccursale << prise << retour << ": V = " << nbVoit << ", L = " << nbPlacesLibres << endl;
+    clog << "verifier disponibilite " << nomSuccursale << " " << prise << " " << retour << ": V = " << nbVoit << ", L = " << nbPlacesLibres << endl;
 
     if (evenements.size() == 0) {
         dispo = nbVoitures > 0;
     } else {
         map<Date, int>::iterator it;
         // la voiture doit etre disponible pour la duree !!
-        for (it = evenements.begin(); it != evenements.end(); ++it) {
+
+        for (it = evenements.begin(); it->first < prise && it != evenements.end(); ++it) {
             nbVoit += it->second;
-            //cout << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << endl;
-            if (it->first < prise) {
-                assert(nbVoit >= 0);
-            } else if (nbVoit < 1) {
-                dispo = false;
-                break;
-            } else if (retour < it->first) {
-                break;
-            }
+            clog << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << endl;
+            assert(nbVoit >= 0);
+        }
+
+        // commence a verifier ici
+
+        dispo = !(it == evenements.end() && nbVoit < 1); // rendu au dernier evenement
+
+        if (dispo) {
+            do {
+                nbVoit += it->second;
+                clog << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << endl;
+                ++it;
+                if (nbVoit < 1) dispo = false;
+            } while (dispo && retour < it->first && it != evenements.end());
         }
     }
 
@@ -38,7 +45,7 @@ bool Succursale::verifierDisponibilite(Date prise, Date retour){
 bool Succursale::verifierRetourPossible(Date retour){
     bool retourOk = true;
     int nbLibre = nbPlacesLibres;
-    //cout << "verifier retour " << nomSuccursale << retour << ": V = " << nbVoitures << ", L = " << nbLibre << endl;
+    clog << "verifier retour " << nomSuccursale << " " << retour << ": V = " << nbVoitures << ", L = " << nbLibre << endl;
 
     if (evenements.size() == 0) {
         retourOk = nbPlacesLibres > 0;
@@ -46,15 +53,22 @@ bool Succursale::verifierRetourPossible(Date retour){
 
         map<Date, int>::iterator it;
         // la place doit etre disponible a partir de retour jusqua la fin des evenements actuels  !!
-        for (it = evenements.begin(); it != evenements.end(); ++it) {
+        for (it = evenements.begin(); it->first < retour && it != evenements.end(); ++it) {
             nbLibre -= it->second;
-            //cout << "V = " << nbPlaces - nbLibre << ", L = " << nbLibre << endl;
-            if (it->first < retour) {
-                assert(nbLibre >= 0);
-            } else if (nbLibre < 1) {
-                    retourOk = false;
-                    break;
-            }
+            clog << it->first << "V = " << nbPlaces - nbLibre << ", L = " << nbLibre << endl;
+            assert(nbLibre >= 0);
+        }
+        // commence a verifier ici
+
+        retourOk = !(it == evenements.end() && nbLibre < 1); // rendu au dernier evenement
+
+        if (retourOk) {
+            do {
+                nbLibre -= it->second;
+                clog << it->first << "V = " << nbPlaces - nbLibre << ", L = " << nbLibre << endl;
+                ++it;
+                if (nbLibre < 1) retourOk = false;
+            } while (retourOk && it != evenements.end());
         }
     }
 

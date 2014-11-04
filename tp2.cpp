@@ -15,8 +15,13 @@
 using namespace std;
 
 int tp2(istream& entree){
+    std::streambuf *psbuf;
+    std::ofstream filestr;
+    filestr.open ("logfile");
+    psbuf = filestr.rdbuf();
+    clog.rdbuf(psbuf);
 
-    //ArbreMap<std::string, Succursale> succursales;
+    //ArbreMap<std::string, Succursale> succursales; // todo utiliser arbremap
     map<string, Succursale> succursales;
     
     int id=1;
@@ -35,6 +40,7 @@ int tp2(istream& entree){
             string origine, destination;
             Date debut, fin;
             entree >> origine >> destination >> debut >> fin;
+            clog << commande << " " << origine << destination << debut << fin << endl;
             bool ok = false;
             if (fin < debut) {
                 cout << "Commande '" << commande << " " << debut << " " << fin << "' invalide!" << endl;
@@ -43,7 +49,7 @@ int tp2(istream& entree){
             Succursale &succursaleO = succursales[origine];
             Succursale &succursaleF = succursales[destination];
             //todo tester si elles existent
-            
+
             if (succursaleO.verifierDisponibilite(debut, fin) &&
                 succursaleF.verifierRetourPossible(fin)) {
                 succursaleO.ajouterEvenementDepart(debut);
@@ -66,6 +72,7 @@ int tp2(istream& entree){
         }
         id++;
     }
+    filestr.close();
     return 0;
 }
 // syntaxe d'appel : ./tp2 [nomfichier.txt]
