@@ -1,19 +1,19 @@
 allo
-11 reserver J C 1j_13h00m 2j_15h00m
 
+11 reserver J C 1j_13h00m 2j_15h00m
 verifier disponibilite J 1j_13h00m 2j_15h00m: V = 4, L = 1
 verifier retour C 2j_15h00m: V = 3, L = 4
-12 reserver C D 2j_15h00m 4j_08h00m
 
+12 reserver C D 2j_15h00m 4j_08h00m
 verifier disponibilite C 2j_15h00m 4j_08h00m: V = 3, L = 4
 2j_15h00mV = 4, L = 3
 verifier retour D 4j_08h00m: V = 6, L = 5
-13 reserver H B 5j_01h00m 6j_02h00m
 
+13 reserver H B 5j_01h00m 6j_02h00m
 verifier disponibilite H 5j_01h00m 6j_02h00m: V = 2, L = 7
 verifier retour B 6j_02h00m: V = 2, L = 8
-14 reserver D J 7j_12h00m 8j_18h00m
 
+14 reserver D J 7j_12h00m 8j_18h00m
 verifier disponibilite D 7j_12h00m 8j_18h00m: V = 6, L = 5
 4j_08h00mV = 7, L = 4
 0j_00h01mV = 7, L = 4
@@ -21,8 +21,8 @@ verifier retour J 8j_18h00m: V = 4, L = 1
 1j_13h00mV = 3, L = 2
 0j_00h01mV = 3, L = 2
 1j_13h00mV = 2, L = 3
-15 reserver H C 9j_20h00m 11j_09h00m
 
+15 reserver H C 9j_20h00m 11j_09h00m
 verifier disponibilite H 9j_20h00m 11j_09h00m: V = 2, L = 7
 5j_01h00mV = 1, L = 8
 0j_00h01mV = 1, L = 8
@@ -30,15 +30,15 @@ verifier retour C 11j_09h00m: V = 3, L = 4
 2j_15h00mV = 3, L = 4
 0j_00h01mV = 3, L = 4
 2j_15h00mV = 3, L = 4
-16 reserver D E 11j_13h00m 12j_15h00m
 
+16 reserver D E 11j_13h00m 12j_15h00m
 verifier disponibilite D 11j_13h00m 12j_15h00m: V = 6, L = 5
 4j_08h00mV = 7, L = 4
 7j_12h00mV = 6, L = 5
 0j_00h02mV = 6, L = 5
 verifier retour E 12j_15h00m: V = 6, L = 6
-17 reserver E B 14j_07h00m 15j_06h00m
 
+17 reserver E B 14j_07h00m 15j_06h00m
 verifier disponibilite E 14j_07h00m 15j_06h00m: V = 6, L = 6
 12j_15h00mV = 7, L = 5
 0j_00h01mV = 7, L = 5
@@ -46,12 +46,12 @@ verifier retour B 15j_06h00m: V = 2, L = 8
 6j_02h00mV = 3, L = 7
 0j_00h01mV = 3, L = 7
 6j_02h00mV = 4, L = 6
-18 reserver A A 16j_02h00m 17j_07h00m
 
+18 reserver A A 16j_02h00m 17j_07h00m
 verifier disponibilite A 16j_02h00m 17j_07h00m: V = 5, L = 3
 verifier retour A 17j_07h00m: V = 5, L = 3
-19 reserver D A 18j_21h00m 20j_18h00m
 
+19 reserver D A 18j_21h00m 20j_18h00m
 verifier disponibilite D 18j_21h00m 20j_18h00m: V = 6, L = 5
 4j_08h00mV = 7, L = 4
 7j_12h00mV = 6, L = 5
@@ -62,15 +62,15 @@ verifier retour A 20j_18h00m: V = 5, L = 3
 17j_07h00mV = 5, L = 3
 0j_00h02mV = 5, L = 3
 17j_07h00mV = 6, L = 2
-20 reserver E I 21j_20h00m 22j_18h00m
 
+20 reserver E I 21j_20h00m 22j_18h00m
 verifier disponibilite E 21j_20h00m 22j_18h00m: V = 6, L = 6
 12j_15h00mV = 7, L = 5
 14j_07h00mV = 6, L = 6
 0j_00h02mV = 6, L = 6
 verifier retour I 22j_18h00m: V = 8, L = 7
-21 reserver C A 23j_07h00m 24j_00h00m
 
+21 reserver C A 23j_07h00m 24j_00h00m
 verifier disponibilite C 23j_07h00m 24j_00h00m: V = 3, L = 4
 2j_15h00mV = 3, L = 4
 11j_09h00mV = 4, L = 3
@@ -81,8 +81,8 @@ verifier retour A 24j_00h00m: V = 5, L = 3
 20j_18h00mV = 6, L = 2
 0j_00h03mV = 6, L = 2
 20j_18h00mV = 7, L = 1
-22 reserver J B 24j_08h00m 25j_07h00m
 
+22 reserver J B 24j_08h00m 25j_07h00m
 verifier disponibilite J 24j_08h00m 25j_07h00m: V = 4, L = 1
 1j_13h00mV = 3, L = 2
 8j_18h00mV = 4, L = 1
@@ -92,8 +92,8 @@ verifier retour B 25j_07h00m: V = 2, L = 8
 15j_06h00mV = 4, L = 6
 0j_00h02mV = 4, L = 6
 15j_06h00mV = 5, L = 5
-23 reserver D D 26j_17h00m 28j_11h00m
 
+23 reserver D D 26j_17h00m 28j_11h00m
 verifier disponibilite D 26j_17h00m 28j_11h00m: V = 6, L = 5
 4j_08h00mV = 7, L = 4
 7j_12h00mV = 6, L = 5
@@ -107,8 +107,8 @@ verifier retour D 28j_11h00m: V = 6, L = 5
 18j_21h00mV = 4, L = 7
 0j_00h04mV = 4, L = 7
 18j_21h00mV = 3, L = 8
-24 reserver F J 30j_00h00m 31j_15h00m
 
+24 reserver F J 30j_00h00m 31j_15h00m
 verifier disponibilite F 30j_00h00m 31j_15h00m: V = 5, L = 6
 verifier retour J 31j_15h00m: V = 4, L = 1
 1j_13h00mV = 3, L = 2
@@ -116,8 +116,8 @@ verifier retour J 31j_15h00m: V = 4, L = 1
 24j_08h00mV = 3, L = 2
 0j_00h03mV = 3, L = 2
 24j_08h00mV = 2, L = 3
-25 reserver A A 31j_17h00m 33j_09h00m
 
+25 reserver A A 31j_17h00m 33j_09h00m
 verifier disponibilite A 31j_17h00m 33j_09h00m: V = 5, L = 3
 16j_02h00mV = 4, L = 4
 17j_07h00mV = 5, L = 3
@@ -131,8 +131,8 @@ verifier retour A 33j_09h00m: V = 5, L = 3
 24j_00h00mV = 7, L = 1
 0j_00h04mV = 7, L = 1
 24j_00h00mV = 8, L = 0
-26 reserver B F 35j_09h00m 36j_18h00m
 
+26 reserver B F 35j_09h00m 36j_18h00m
 verifier disponibilite B 35j_09h00m 36j_18h00m: V = 2, L = 8
 6j_02h00mV = 3, L = 7
 15j_06h00mV = 4, L = 6
@@ -142,8 +142,8 @@ verifier retour F 36j_18h00m: V = 5, L = 6
 30j_00h00mV = 4, L = 7
 0j_00h01mV = 4, L = 7
 30j_00h00mV = 3, L = 8
-27 reserver I C 37j_05h00m 37j_19h00m
 
+27 reserver I C 37j_05h00m 37j_19h00m
 verifier disponibilite I 37j_05h00m 37j_19h00m: V = 8, L = 7
 22j_18h00mV = 9, L = 6
 0j_00h01mV = 9, L = 6
@@ -153,8 +153,8 @@ verifier retour C 37j_19h00m: V = 3, L = 4
 23j_07h00mV = 3, L = 4
 0j_00h03mV = 3, L = 4
 23j_07h00mV = 2, L = 5
-28 reserver I C 39j_17h00m 41j_02h00m
 
+28 reserver I C 39j_17h00m 41j_02h00m
 verifier disponibilite I 39j_17h00m 41j_02h00m: V = 8, L = 7
 22j_18h00mV = 9, L = 6
 37j_05h00mV = 8, L = 7
@@ -166,8 +166,8 @@ verifier retour C 41j_02h00m: V = 3, L = 4
 37j_19h00mV = 4, L = 3
 0j_00h04mV = 4, L = 3
 37j_19h00mV = 5, L = 2
-29 reserver E F 41j_16h00m 42j_20h00m
 
+29 reserver E F 41j_16h00m 42j_20h00m
 verifier disponibilite E 41j_16h00m 42j_20h00m: V = 6, L = 6
 12j_15h00mV = 7, L = 5
 14j_07h00mV = 6, L = 6
@@ -178,13 +178,13 @@ verifier retour F 42j_20h00m: V = 5, L = 6
 36j_18h00mV = 5, L = 6
 0j_00h02mV = 5, L = 6
 36j_18h00mV = 6, L = 5
-30 reserver H F 43j_18h00m 44j_22h00m
 
+30 reserver H F 43j_18h00m 44j_22h00m
 verifier disponibilite H 43j_18h00m 44j_22h00m: V = 2, L = 7
 5j_01h00mV = 1, L = 8
 9j_20h00mV = 0, L = 9
-31 reserver G E 45j_02h00m 45j_19h00m
 
+31 reserver G E 45j_02h00m 45j_19h00m
 verifier disponibilite G 45j_02h00m 45j_19h00m: V = 6, L = 4
 verifier retour E 45j_19h00m: V = 6, L = 6
 12j_15h00mV = 7, L = 5
@@ -193,8 +193,8 @@ verifier retour E 45j_19h00m: V = 6, L = 6
 41j_16h00mV = 4, L = 8
 0j_00h04mV = 4, L = 8
 41j_16h00mV = 3, L = 9
-32 reserver I C 46j_07h00m 48j_07h00m
 
+32 reserver I C 46j_07h00m 48j_07h00m
 verifier disponibilite I 46j_07h00m 48j_07h00m: V = 8, L = 7
 22j_18h00mV = 9, L = 6
 37j_05h00mV = 8, L = 7
@@ -208,8 +208,8 @@ verifier retour C 48j_07h00m: V = 3, L = 4
 41j_02h00mV = 5, L = 2
 0j_00h05mV = 5, L = 2
 41j_02h00mV = 6, L = 1
-33 reserver I G 48j_16h00m 49j_04h00m
 
+33 reserver I G 48j_16h00m 49j_04h00m
 verifier disponibilite I 48j_16h00m 49j_04h00m: V = 8, L = 7
 22j_18h00mV = 9, L = 6
 37j_05h00mV = 8, L = 7
@@ -220,8 +220,8 @@ verifier retour G 49j_04h00m: V = 6, L = 4
 45j_02h00mV = 5, L = 5
 0j_00h01mV = 5, L = 5
 45j_02h00mV = 4, L = 6
-34 reserver A A 50j_19h00m 51j_19h00m
 
+34 reserver A A 50j_19h00m 51j_19h00m
 verifier disponibilite A 50j_19h00m 51j_19h00m: V = 5, L = 3
 16j_02h00mV = 4, L = 4
 17j_07h00mV = 5, L = 3
@@ -235,8 +235,8 @@ verifier retour A 51j_19h00m: V = 5, L = 3
 24j_00h00mV = 7, L = 1
 0j_00h04mV = 7, L = 1
 24j_00h00mV = 8, L = 0
-35 reserver B D 52j_13h00m 53j_17h00m
 
+35 reserver B D 52j_13h00m 53j_17h00m
 verifier disponibilite B 52j_13h00m 53j_17h00m: V = 2, L = 8
 6j_02h00mV = 3, L = 7
 15j_06h00mV = 4, L = 6
@@ -252,8 +252,8 @@ verifier retour D 53j_17h00m: V = 6, L = 5
 28j_11h00mV = 4, L = 7
 0j_00h06mV = 4, L = 7
 28j_11h00mV = 5, L = 6
-36 reserver D G 54j_09h00m 55j_12h00m
 
+36 reserver D G 54j_09h00m 55j_12h00m
 verifier disponibilite D 54j_09h00m 55j_12h00m: V = 6, L = 5
 4j_08h00mV = 7, L = 4
 7j_12h00mV = 6, L = 5
@@ -268,8 +268,8 @@ verifier retour G 55j_12h00m: V = 6, L = 4
 49j_04h00mV = 6, L = 4
 0j_00h02mV = 6, L = 4
 49j_04h00mV = 7, L = 3
-37 reserver I I 56j_01h00m 57j_06h00m
 
+37 reserver I I 56j_01h00m 57j_06h00m
 verifier disponibilite I 56j_01h00m 57j_06h00m: V = 8, L = 7
 22j_18h00mV = 9, L = 6
 37j_05h00mV = 8, L = 7
@@ -285,8 +285,8 @@ verifier retour I 57j_06h00m: V = 8, L = 7
 48j_16h00mV = 5, L = 10
 0j_00h05mV = 5, L = 10
 48j_16h00mV = 4, L = 11
-38 reserver B A 59j_02h00m 59j_19h00m
 
+38 reserver B A 59j_02h00m 59j_19h00m
 verifier disponibilite B 59j_02h00m 59j_19h00m: V = 2, L = 8
 6j_02h00mV = 3, L = 7
 15j_06h00mV = 4, L = 6
@@ -301,8 +301,8 @@ verifier retour A 59j_19h00m: V = 5, L = 3
 24j_00h00mV = 7, L = 1
 0j_00h04mV = 7, L = 1
 24j_00h00mV = 8, L = 0
-39 reserver A A 61j_17h00m 63j_10h00m
 
+39 reserver A A 61j_17h00m 63j_10h00m
 verifier disponibilite A 61j_17h00m 63j_10h00m: V = 5, L = 3
 16j_02h00mV = 4, L = 4
 17j_07h00mV = 5, L = 3
@@ -316,18 +316,18 @@ verifier retour A 63j_10h00m: V = 5, L = 3
 24j_00h00mV = 7, L = 1
 0j_00h04mV = 7, L = 1
 24j_00h00mV = 8, L = 0
-40 reserver H D 63j_12h00m 64j_13h00m
 
+40 reserver H D 63j_12h00m 64j_13h00m
 verifier disponibilite H 63j_12h00m 64j_13h00m: V = 2, L = 7
 5j_01h00mV = 1, L = 8
 9j_20h00mV = 0, L = 9
-41 reserver H H 64j_13h00m 65j_19h00m
 
+41 reserver H H 64j_13h00m 65j_19h00m
 verifier disponibilite H 64j_13h00m 65j_19h00m: V = 2, L = 7
 5j_01h00mV = 1, L = 8
 9j_20h00mV = 0, L = 9
-42 reserver G J 67j_15h00m 69j_03h00m
 
+42 reserver G J 67j_15h00m 69j_03h00m
 verifier disponibilite G 67j_15h00m 69j_03h00m: V = 6, L = 4
 45j_02h00mV = 5, L = 5
 49j_04h00mV = 6, L = 4
@@ -340,8 +340,8 @@ verifier retour J 69j_03h00m: V = 4, L = 1
 31j_15h00mV = 4, L = 1
 0j_00h04mV = 4, L = 1
 31j_15h00mV = 5, L = 0
-43 reserver A F 70j_04h00m 70j_16h00m
 
+43 reserver A F 70j_04h00m 70j_16h00m
 verifier disponibilite A 70j_04h00m 70j_16h00m: V = 5, L = 3
 16j_02h00mV = 4, L = 4
 17j_07h00mV = 5, L = 3
@@ -354,8 +354,8 @@ verifier retour F 70j_16h00m: V = 5, L = 6
 42j_20h00mV = 6, L = 5
 0j_00h03mV = 6, L = 5
 42j_20h00mV = 7, L = 4
-44 reserver A H 71j_05h00m 72j_17h00m
 
+44 reserver A H 71j_05h00m 72j_17h00m
 verifier disponibilite A 71j_05h00m 72j_17h00m: V = 5, L = 3
 16j_02h00mV = 4, L = 4
 17j_07h00mV = 5, L = 3
@@ -368,8 +368,8 @@ verifier retour H 72j_17h00m: V = 2, L = 7
 9j_20h00mV = 0, L = 9
 0j_00h02mV = 0, L = 9
 9j_20h00mV = -1, L = 10
-45 reserver D A 72j_21h00m 74j_03h00m
 
+45 reserver D A 72j_21h00m 74j_03h00m
 verifier disponibilite D 72j_21h00m 74j_03h00m: V = 6, L = 5
 4j_08h00mV = 7, L = 4
 7j_12h00mV = 6, L = 5
@@ -389,8 +389,8 @@ verifier retour A 74j_03h00m: V = 5, L = 3
 71j_05h00mV = 5, L = 3
 0j_00h06mV = 5, L = 3
 71j_05h00mV = 4, L = 4
-46 reserver A H 75j_06h00m 77j_06h00m
 
+46 reserver A H 75j_06h00m 77j_06h00m
 verifier disponibilite A 75j_06h00m 77j_06h00m: V = 5, L = 3
 16j_02h00mV = 4, L = 4
 17j_07h00mV = 5, L = 3
@@ -406,8 +406,8 @@ verifier retour H 77j_06h00m: V = 2, L = 7
 72j_17h00mV = 1, L = 8
 0j_00h03mV = 1, L = 8
 72j_17h00mV = 2, L = 7
-47 reserver D D 77j_07h00m 78j_03h00m
 
+47 reserver D D 77j_07h00m 78j_03h00m
 verifier disponibilite D 77j_07h00m 78j_03h00m: V = 6, L = 5
 4j_08h00mV = 7, L = 4
 7j_12h00mV = 6, L = 5
@@ -431,8 +431,8 @@ verifier retour D 78j_03h00m: V = 6, L = 5
 72j_21h00mV = 3, L = 8
 0j_00h09mV = 3, L = 8
 72j_21h00mV = 2, L = 9
-48 reserver B B 79j_08h00m 80j_10h00m
 
+48 reserver B B 79j_08h00m 80j_10h00m
 verifier disponibilite B 79j_08h00m 80j_10h00m: V = 2, L = 8
 6j_02h00mV = 3, L = 7
 15j_06h00mV = 4, L = 6
@@ -448,8 +448,8 @@ verifier retour B 80j_10h00m: V = 2, L = 8
 52j_13h00mV = 3, L = 7
 0j_00h05mV = 3, L = 7
 52j_13h00mV = 2, L = 8
-49 reserver J D 81j_16h00m 83j_08h00m
 
+49 reserver J D 81j_16h00m 83j_08h00m
 verifier disponibilite J 81j_16h00m 83j_08h00m: V = 4, L = 1
 1j_13h00mV = 3, L = 2
 8j_18h00mV = 4, L = 1
@@ -470,8 +470,8 @@ verifier retour D 83j_08h00m: V = 6, L = 5
 78j_03h00mV = 3, L = 8
 0j_00h11mV = 3, L = 8
 78j_03h00mV = 4, L = 7
-50 reserver E B 84j_00h00m 85j_16h00m
 
+50 reserver E B 84j_00h00m 85j_16h00m
 verifier disponibilite E 84j_00h00m 85j_16h00m: V = 6, L = 6
 12j_15h00mV = 7, L = 5
 14j_07h00mV = 6, L = 6
@@ -489,8 +489,8 @@ verifier retour B 85j_16h00m: V = 2, L = 8
 80j_10h00mV = 3, L = 7
 0j_00h07mV = 3, L = 7
 80j_10h00mV = 4, L = 6
-51 reserver D D 85j_22h00m 87j_13h00m
 
+51 reserver D D 85j_22h00m 87j_13h00m
 verifier disponibilite D 85j_22h00m 87j_13h00m: V = 6, L = 5
 4j_08h00mV = 7, L = 4
 7j_12h00mV = 6, L = 5
@@ -520,8 +520,8 @@ verifier retour D 87j_13h00m: V = 6, L = 5
 83j_08h00mV = 4, L = 7
 0j_00h12mV = 4, L = 7
 83j_08h00mV = 5, L = 6
-52 reserver I I 88j_19h00m 89j_23h00m
 
+52 reserver I I 88j_19h00m 89j_23h00m
 verifier disponibilite I 88j_19h00m 89j_23h00m: V = 8, L = 7
 22j_18h00mV = 9, L = 6
 37j_05h00mV = 8, L = 7
@@ -541,8 +541,8 @@ verifier retour I 89j_23h00m: V = 8, L = 7
 57j_06h00mV = 5, L = 10
 0j_00h07mV = 5, L = 10
 57j_06h00mV = 6, L = 9
-53 reserver B A 89j_23h00m 91j_02h00m
 
+53 reserver B A 89j_23h00m 91j_02h00m
 verifier disponibilite B 89j_23h00m 91j_02h00m: V = 2, L = 8
 6j_02h00mV = 3, L = 7
 15j_06h00mV = 4, L = 6
@@ -564,8 +564,8 @@ verifier retour A 91j_02h00m: V = 5, L = 3
 75j_06h00mV = 5, L = 3
 0j_00h08mV = 5, L = 3
 75j_06h00mV = 4, L = 4
-54 reserver C C 91j_10h00m 93j_03h00m
 
+54 reserver C C 91j_10h00m 93j_03h00m
 verifier disponibilite C 91j_10h00m 93j_03h00m: V = 3, L = 4
 2j_15h00mV = 3, L = 4
 11j_09h00mV = 4, L = 3
@@ -583,8 +583,8 @@ verifier retour C 93j_03h00m: V = 3, L = 4
 48j_07h00mV = 6, L = 1
 0j_00h06mV = 6, L = 1
 48j_07h00mV = 7, L = 0
-55 reserver F F 93j_21h00m 95j_20h00m
 
+55 reserver F F 93j_21h00m 95j_20h00m
 verifier disponibilite F 93j_21h00m 95j_20h00m: V = 5, L = 6
 30j_00h00mV = 4, L = 7
 36j_18h00mV = 5, L = 6
@@ -598,8 +598,8 @@ verifier retour F 95j_20h00m: V = 5, L = 6
 70j_16h00mV = 7, L = 4
 0j_00h04mV = 7, L = 4
 70j_16h00mV = 8, L = 3
-56 reserver G G 97j_15h00m 99j_15h00m
 
+56 reserver G G 97j_15h00m 99j_15h00m
 verifier disponibilite G 97j_15h00m 99j_15h00m: V = 6, L = 4
 45j_02h00mV = 5, L = 5
 49j_04h00mV = 6, L = 4
@@ -611,8 +611,8 @@ verifier retour G 99j_15h00m: V = 6, L = 4
 55j_12h00mV = 7, L = 3
 0j_00h03mV = 7, L = 3
 55j_12h00mV = 8, L = 2
-57 reserver D B 100j_06h00m 101j_07h00m
 
+57 reserver D B 100j_06h00m 101j_07h00m
 verifier disponibilite D 100j_06h00m 101j_07h00m: V = 6, L = 5
 4j_08h00mV = 7, L = 4
 7j_12h00mV = 6, L = 5
@@ -641,8 +641,8 @@ verifier retour B 101j_07h00m: V = 2, L = 8
 89j_23h00mV = 3, L = 7
 0j_00h09mV = 3, L = 7
 89j_23h00mV = 2, L = 8
-58 reserver E E 102j_04h00m 103j_12h00m
 
+58 reserver E E 102j_04h00m 103j_12h00m
 verifier disponibilite E 102j_04h00m 103j_12h00m: V = 6, L = 6
 12j_15h00mV = 7, L = 5
 14j_07h00mV = 6, L = 6
@@ -660,8 +660,8 @@ verifier retour E 103j_12h00m: V = 6, L = 6
 84j_00h00mV = 4, L = 8
 0j_00h06mV = 4, L = 8
 84j_00h00mV = 3, L = 9
-59 reserver J G 104j_04h00m 105j_15h00m
 
+59 reserver J G 104j_04h00m 105j_15h00m
 verifier disponibilite J 104j_04h00m 105j_15h00m: V = 4, L = 1
 1j_13h00mV = 3, L = 2
 8j_18h00mV = 4, L = 1
@@ -677,8 +677,8 @@ verifier retour G 105j_15h00m: V = 6, L = 4
 99j_15h00mV = 7, L = 3
 0j_00h05mV = 7, L = 3
 99j_15h00mV = 8, L = 2
-60 reserver J J 105j_19h00m 107j_04h00m
 
+60 reserver J J 105j_19h00m 107j_04h00m
 verifier disponibilite J 105j_19h00m 107j_04h00m: V = 4, L = 1
 1j_13h00mV = 3, L = 2
 8j_18h00mV = 4, L = 1
@@ -696,8 +696,8 @@ verifier retour J 107j_04h00m: V = 4, L = 1
 104j_04h00mV = 2, L = 3
 0j_00h06mV = 2, L = 3
 104j_04h00mV = 1, L = 4
-61 reserver I C 108j_13h00m 109j_17h00m
 
+61 reserver I C 108j_13h00m 109j_17h00m
 verifier disponibilite I 108j_13h00m 109j_17h00m: V = 8, L = 7
 22j_18h00mV = 9, L = 6
 37j_05h00mV = 8, L = 7
@@ -718,8 +718,8 @@ verifier retour C 109j_17h00m: V = 3, L = 4
 48j_07h00mV = 6, L = 1
 0j_00h06mV = 6, L = 1
 48j_07h00mV = 7, L = 0
-62 reserver E I 110j_12h00m 111j_15h00m
 
+62 reserver E I 110j_12h00m 111j_15h00m
 verifier disponibilite E 110j_12h00m 111j_15h00m: V = 6, L = 6
 12j_15h00mV = 7, L = 5
 14j_07h00mV = 6, L = 6
@@ -742,8 +742,8 @@ verifier retour I 111j_15h00m: V = 8, L = 7
 89j_23h00mV = 5, L = 10
 0j_00h09mV = 5, L = 10
 89j_23h00mV = 6, L = 9
-63 reserver D I 112j_09h00m 113j_02h00m
 
+63 reserver D I 112j_09h00m 113j_02h00m
 verifier disponibilite D 112j_09h00m 113j_02h00m: V = 6, L = 5
 4j_08h00mV = 7, L = 4
 7j_12h00mV = 6, L = 5
@@ -774,8 +774,8 @@ verifier retour I 113j_02h00m: V = 8, L = 7
 111j_15h00mV = 6, L = 9
 0j_00h10mV = 6, L = 9
 111j_15h00mV = 7, L = 8
-64 reserver A C 113j_12h00m 115j_03h00m
 
+64 reserver A C 113j_12h00m 115j_03h00m
 verifier disponibilite A 113j_12h00m 115j_03h00m: V = 5, L = 3
 16j_02h00mV = 4, L = 4
 17j_07h00mV = 5, L = 3
@@ -796,8 +796,8 @@ verifier retour C 115j_03h00m: V = 3, L = 4
 48j_07h00mV = 6, L = 1
 0j_00h06mV = 6, L = 1
 48j_07h00mV = 7, L = 0
-65 reserver I I 115j_21h00m 117j_18h00m
 
+65 reserver I I 115j_21h00m 117j_18h00m
 verifier disponibilite I 115j_21h00m 117j_18h00m: V = 8, L = 7
 22j_18h00mV = 9, L = 6
 37j_05h00mV = 8, L = 7
@@ -825,8 +825,8 @@ verifier retour I 117j_18h00m: V = 8, L = 7
 113j_02h00mV = 7, L = 8
 0j_00h11mV = 7, L = 8
 113j_02h00mV = 8, L = 7
-66 reserver J F 118j_00h00m 119j_10h00m
 
+66 reserver J F 118j_00h00m 119j_10h00m
 verifier disponibilite J 118j_00h00m 119j_10h00m: V = 4, L = 1
 1j_13h00mV = 3, L = 2
 8j_18h00mV = 4, L = 1
@@ -846,8 +846,8 @@ verifier retour F 119j_10h00m: V = 5, L = 6
 95j_20h00mV = 7, L = 4
 0j_00h06mV = 7, L = 4
 95j_20h00mV = 8, L = 3
-67 reserver G G 121j_07h00m 122j_12h00m
 
+67 reserver G G 121j_07h00m 122j_12h00m
 verifier disponibilite G 121j_07h00m 122j_12h00m: V = 6, L = 4
 45j_02h00mV = 5, L = 5
 49j_04h00mV = 6, L = 4
@@ -865,8 +865,8 @@ verifier retour G 122j_12h00m: V = 6, L = 4
 105j_15h00mV = 8, L = 2
 0j_00h06mV = 8, L = 2
 105j_15h00mV = 9, L = 1
-68 reserver B A 123j_23h00m 125j_16h00m
 
+68 reserver B A 123j_23h00m 125j_16h00m
 verifier disponibilite B 123j_23h00m 125j_16h00m: V = 2, L = 8
 6j_02h00mV = 3, L = 7
 15j_06h00mV = 4, L = 6
@@ -891,8 +891,8 @@ verifier retour A 125j_16h00m: V = 5, L = 3
 91j_02h00mV = 6, L = 2
 0j_00h09mV = 6, L = 2
 91j_02h00mV = 7, L = 1
-69 reserver I B 127j_00h00m 128j_04h00m
 
+69 reserver I B 127j_00h00m 128j_04h00m
 verifier disponibilite I 127j_00h00m 128j_04h00m: V = 8, L = 7
 22j_18h00mV = 9, L = 6
 37j_05h00mV = 8, L = 7
@@ -922,8 +922,8 @@ verifier retour B 128j_04h00m: V = 2, L = 8
 123j_23h00mV = 3, L = 7
 0j_00h11mV = 3, L = 7
 123j_23h00mV = 2, L = 8
-70 reserver H E 129j_22h00m 131j_04h00m
 
+70 reserver H E 129j_22h00m 131j_04h00m
 verifier disponibilite H 129j_22h00m 131j_04h00m: V = 2, L = 7
 5j_01h00mV = 1, L = 8
 9j_20h00mV = 0, L = 9
@@ -942,8 +942,8 @@ verifier retour E 131j_04h00m: V = 6, L = 6
 110j_12h00mV = 3, L = 9
 0j_00h09mV = 3, L = 9
 110j_12h00mV = 2, L = 10
-71 reserver E A 131j_19h01m 133j_06h01m
 
+71 reserver E A 131j_19h01m 133j_06h01m
 verifier disponibilite E 131j_19h01m 133j_06h01m: V = 6, L = 6
 12j_15h00mV = 7, L = 5
 14j_07h00mV = 6, L = 6
@@ -969,8 +969,8 @@ verifier retour A 133j_06h01m: V = 5, L = 3
 125j_16h00mV = 7, L = 1
 0j_00h10mV = 7, L = 1
 125j_16h00mV = 8, L = 0
-72 reserver B A 133j_16h01m 134j_08h01m
 
+72 reserver B A 133j_16h01m 134j_08h01m
 verifier disponibilite B 133j_16h01m 134j_08h01m: V = 2, L = 8
 6j_02h00mV = 3, L = 7
 15j_06h00mV = 4, L = 6
@@ -998,8 +998,8 @@ verifier retour A 134j_08h01m: V = 5, L = 3
 125j_16h00mV = 7, L = 1
 0j_00h10mV = 7, L = 1
 125j_16h00mV = 8, L = 0
-73 reserver F H 136j_02h01m 138j_00h01m
 
+73 reserver F H 136j_02h01m 138j_00h01m
 verifier disponibilite F 136j_02h01m 138j_00h01m: V = 5, L = 6
 30j_00h00mV = 4, L = 7
 36j_18h00mV = 5, L = 6
@@ -1017,8 +1017,8 @@ verifier retour H 138j_00h01m: V = 2, L = 7
 129j_22h00mV = 1, L = 8
 0j_00h05mV = 1, L = 8
 129j_22h00mV = 0, L = 9
-74 reserver E H 139j_10h01m 140j_23h01m
 
+74 reserver E H 139j_10h01m 140j_23h01m
 verifier disponibilite E 139j_10h01m 140j_23h01m: V = 6, L = 6
 12j_15h00mV = 7, L = 5
 14j_07h00mV = 6, L = 6
@@ -1040,8 +1040,8 @@ verifier retour H 140j_23h01m: V = 2, L = 7
 138j_00h01mV = 2, L = 7
 0j_00h06mV = 2, L = 7
 138j_00h01mV = 3, L = 6
-75 reserver F F 141j_08h01m 142j_22h01m
 
+75 reserver F F 141j_08h01m 142j_22h01m
 verifier disponibilite F 141j_08h01m 142j_22h01m: V = 5, L = 6
 30j_00h00mV = 4, L = 7
 36j_18h00mV = 5, L = 6
@@ -1063,8 +1063,8 @@ verifier retour F 142j_22h01m: V = 5, L = 6
 136j_02h01mV = 7, L = 4
 0j_00h08mV = 7, L = 4
 136j_02h01mV = 6, L = 5
-76 reserver I B 144j_17h01m 146j_14h01m
 
+76 reserver I B 144j_17h01m 146j_14h01m
 verifier disponibilite I 144j_17h01m 146j_14h01m: V = 8, L = 7
 22j_18h00mV = 9, L = 6
 37j_05h00mV = 8, L = 7
@@ -1096,8 +1096,8 @@ verifier retour B 146j_14h01m: V = 2, L = 8
 128j_04h00mV = 4, L = 6
 0j_00h12mV = 4, L = 6
 128j_04h00mV = 5, L = 5
-77 reserver E F 147j_01h01m 147j_21h01m
 
+77 reserver E F 147j_01h01m 147j_21h01m
 verifier disponibilite E 147j_01h01m 147j_21h01m: V = 6, L = 6
 12j_15h00mV = 7, L = 5
 14j_07h00mV = 6, L = 6
@@ -1124,8 +1124,8 @@ verifier retour F 147j_21h01m: V = 5, L = 6
 142j_22h01mV = 7, L = 4
 0j_00h10mV = 7, L = 4
 142j_22h01mV = 8, L = 3
-78 reserver I C 148j_17h01m 149j_14h01m
 
+78 reserver I C 148j_17h01m 149j_14h01m
 verifier disponibilite I 148j_17h01m 149j_14h01m: V = 8, L = 7
 22j_18h00mV = 9, L = 6
 37j_05h00mV = 8, L = 7
@@ -1152,8 +1152,8 @@ verifier retour C 149j_14h01m: V = 3, L = 4
 48j_07h00mV = 6, L = 1
 0j_00h06mV = 6, L = 1
 48j_07h00mV = 7, L = 0
-79 reserver J J 151j_07h01m 152j_00h01m
 
+79 reserver J J 151j_07h01m 152j_00h01m
 verifier disponibilite J 151j_07h01m 152j_00h01m: V = 4, L = 1
 1j_13h00mV = 3, L = 2
 8j_18h00mV = 4, L = 1
@@ -1177,8 +1177,8 @@ verifier retour J 152j_00h01m: V = 4, L = 1
 118j_00h00mV = 1, L = 4
 0j_00h09mV = 1, L = 4
 118j_00h00mV = 0, L = 5
-80 reserver I I 152j_23h01m 154j_20h01m
 
+80 reserver I I 152j_23h01m 154j_20h01m
 verifier disponibilite I 152j_23h01m 154j_20h01m: V = 8, L = 7
 22j_18h00mV = 9, L = 6
 37j_05h00mV = 8, L = 7
@@ -1214,8 +1214,8 @@ verifier retour I 154j_20h01m: V = 8, L = 7
 144j_17h01mV = 5, L = 10
 0j_00h15mV = 5, L = 10
 144j_17h01mV = 4, L = 11
-81 reserver F J 156j_16h01m 158j_06h01m
 
+81 reserver F J 156j_16h01m 158j_06h01m
 verifier disponibilite F 156j_16h01m 158j_06h01m: V = 5, L = 6
 30j_00h00mV = 4, L = 7
 36j_18h00mV = 5, L = 6
@@ -1243,8 +1243,8 @@ verifier retour J 158j_06h01m: V = 4, L = 1
 152j_00h01mV = 1, L = 4
 0j_00h11mV = 1, L = 4
 152j_00h01mV = 2, L = 3
-82 reserver J G 159j_00h01m 160j_13h01m
 
+82 reserver J G 159j_00h01m 160j_13h01m
 verifier disponibilite J 159j_00h01m 160j_13h01m: V = 4, L = 1
 1j_13h00mV = 3, L = 2
 8j_18h00mV = 4, L = 1
@@ -1270,8 +1270,8 @@ verifier retour G 160j_13h01m: V = 6, L = 4
 122j_12h00mV = 8, L = 2
 0j_00h08mV = 8, L = 2
 122j_12h00mV = 9, L = 1
-83 reserver A B 161j_05h01m 162j_21h01m
 
+83 reserver A B 161j_05h01m 162j_21h01m
 verifier disponibilite A 161j_05h01m 162j_21h01m: V = 5, L = 3
 16j_02h00mV = 4, L = 4
 17j_07h00mV = 5, L = 3
@@ -1300,8 +1300,8 @@ verifier retour B 162j_21h01m: V = 2, L = 8
 146j_14h01mV = 5, L = 5
 0j_00h13mV = 5, L = 5
 146j_14h01mV = 6, L = 4
-84 reserver H H 164j_03h01m 165j_12h01m
 
+84 reserver H H 164j_03h01m 165j_12h01m
 verifier disponibilite H 164j_03h01m 165j_12h01m: V = 2, L = 7
 5j_01h00mV = 1, L = 8
 9j_20h00mV = 0, L = 9
@@ -1321,8 +1321,8 @@ verifier retour H 165j_12h01m: V = 2, L = 7
 140j_23h01mV = 3, L = 6
 0j_00h07mV = 3, L = 6
 140j_23h01mV = 4, L = 5
-85 reserver J D 166j_17h01m 167j_15h01m
 
+85 reserver J D 166j_17h01m 167j_15h01m
 verifier disponibilite J 166j_17h01m 167j_15h01m: V = 4, L = 1
 1j_13h00mV = 3, L = 2
 8j_18h00mV = 4, L = 1
@@ -1357,8 +1357,8 @@ verifier retour D 167j_15h01m: V = 6, L = 5
 112j_09h00mV = 2, L = 9
 0j_00h16mV = 2, L = 9
 112j_09h00mV = 1, L = 10
-86 reserver J G 168j_15h01m 170j_03h01m
 
+86 reserver J G 168j_15h01m 170j_03h01m
 verifier disponibilite J 168j_15h01m 170j_03h01m: V = 4, L = 1
 1j_13h00mV = 3, L = 2
 8j_18h00mV = 4, L = 1
@@ -1374,8 +1374,8 @@ verifier disponibilite J 168j_15h01m 170j_03h01m: V = 4, L = 1
 158j_06h01mV = 2, L = 3
 159j_00h01mV = 1, L = 4
 166j_17h01mV = 0, L = 5
-87 reserver E C 170j_03h01m 171j_22h01m
 
+87 reserver E C 170j_03h01m 171j_22h01m
 verifier disponibilite E 170j_03h01m 171j_22h01m: V = 6, L = 6
 12j_15h00mV = 7, L = 5
 14j_07h00mV = 6, L = 6
@@ -1399,8 +1399,8 @@ verifier retour C 171j_22h01m: V = 3, L = 4
 48j_07h00mV = 6, L = 1
 0j_00h06mV = 6, L = 1
 48j_07h00mV = 7, L = 0
-88 reserver C A 171j_22h01m 172j_16h01m
 
+88 reserver C A 171j_22h01m 172j_16h01m
 verifier disponibilite C 171j_22h01m 172j_16h01m: V = 3, L = 4
 2j_15h00mV = 3, L = 4
 11j_09h00mV = 4, L = 3
@@ -1423,8 +1423,8 @@ verifier retour A 172j_16h01m: V = 5, L = 3
 161j_05h01mV = 6, L = 2
 0j_00h11mV = 6, L = 2
 161j_05h01mV = 5, L = 3
-89 reserver B B 173j_17h01m 175j_17h01m
 
+89 reserver B B 173j_17h01m 175j_17h01m
 verifier disponibilite B 173j_17h01m 175j_17h01m: V = 2, L = 8
 6j_02h00mV = 3, L = 7
 15j_06h00mV = 4, L = 6
@@ -1458,8 +1458,8 @@ verifier retour B 175j_17h01m: V = 2, L = 8
 162j_21h01mV = 6, L = 4
 0j_00h14mV = 6, L = 4
 162j_21h01mV = 7, L = 3
-90 reserver G H 177j_14h01m 178j_15h01m
 
+90 reserver G H 177j_14h01m 178j_15h01m
 verifier disponibilite G 177j_14h01m 178j_15h01m: V = 6, L = 4
 45j_02h00mV = 5, L = 5
 49j_04h00mV = 6, L = 4
@@ -1483,8 +1483,8 @@ verifier retour H 178j_15h01m: V = 2, L = 7
 165j_12h01mV = 3, L = 6
 0j_00h09mV = 3, L = 6
 165j_12h01mV = 4, L = 5
-91 reserver G C 180j_14h01m 182j_07h01m
 
+91 reserver G C 180j_14h01m 182j_07h01m
 verifier disponibilite G 180j_14h01m 182j_07h01m: V = 6, L = 4
 45j_02h00mV = 5, L = 5
 49j_04h00mV = 6, L = 4
@@ -1507,8 +1507,8 @@ verifier retour C 182j_07h01m: V = 3, L = 4
 171j_22h01mV = 5, L = 2
 0j_00h07mV = 5, L = 2
 171j_22h01mV = 4, L = 3
-92 reserver D I 183j_09h01m 184j_04h01m
 
+92 reserver D I 183j_09h01m 184j_04h01m
 verifier disponibilite D 183j_09h01m 184j_04h01m: V = 6, L = 5
 4j_08h00mV = 7, L = 4
 7j_12h00mV = 6, L = 5
@@ -1548,8 +1548,8 @@ verifier retour I 184j_04h01m: V = 8, L = 7
 154j_20h01mV = 5, L = 10
 0j_00h17mV = 5, L = 10
 154j_20h01mV = 6, L = 9
-93 reserver A A 185j_03h01m 186j_22h01m
 
+93 reserver A A 185j_03h01m 186j_22h01m
 verifier disponibilite A 185j_03h01m 186j_22h01m: V = 5, L = 3
 16j_02h00mV = 4, L = 4
 17j_07h00mV = 5, L = 3
@@ -1579,8 +1579,8 @@ verifier retour A 186j_22h01m: V = 5, L = 3
 172j_16h01mV = 7, L = 1
 0j_00h12mV = 7, L = 1
 172j_16h01mV = 8, L = 0
-94 reserver I G 187j_02h01m 188j_05h01m
 
+94 reserver I G 187j_02h01m 188j_05h01m
 verifier disponibilite I 187j_02h01m 188j_05h01m: V = 8, L = 7
 22j_18h00mV = 9, L = 6
 37j_05h00mV = 8, L = 7
@@ -1615,8 +1615,8 @@ verifier retour G 188j_05h01m: V = 6, L = 4
 180j_14h01mV = 7, L = 3
 0j_00h11mV = 7, L = 3
 180j_14h01mV = 6, L = 4
-95 reserver J E 188j_07h01m 188j_19h01m
 
+95 reserver J E 188j_07h01m 188j_19h01m
 verifier disponibilite J 188j_07h01m 188j_19h01m: V = 4, L = 1
 1j_13h00mV = 3, L = 2
 8j_18h00mV = 4, L = 1
@@ -1632,8 +1632,8 @@ verifier disponibilite J 188j_07h01m 188j_19h01m: V = 4, L = 1
 158j_06h01mV = 2, L = 3
 159j_00h01mV = 1, L = 4
 166j_17h01mV = 0, L = 5
-96 reserver G J 190j_11h01m 191j_22h01m
 
+96 reserver G J 190j_11h01m 191j_22h01m
 verifier disponibilite G 190j_11h01m 191j_22h01m: V = 6, L = 4
 45j_02h00mV = 5, L = 5
 49j_04h00mV = 6, L = 4
@@ -1665,8 +1665,8 @@ verifier retour J 191j_22h01m: V = 4, L = 1
 166j_17h01mV = 0, L = 5
 0j_00h14mV = 0, L = 5
 166j_17h01mV = -1, L = 6
-97 reserver H B 193j_11h01m 195j_05h01m
 
+97 reserver H B 193j_11h01m 195j_05h01m
 verifier disponibilite H 193j_11h01m 195j_05h01m: V = 2, L = 7
 5j_01h00mV = 1, L = 8
 9j_20h00mV = 0, L = 9
@@ -1698,8 +1698,8 @@ verifier retour B 195j_05h01m: V = 2, L = 8
 175j_17h01mV = 6, L = 4
 0j_00h16mV = 6, L = 4
 175j_17h01mV = 7, L = 3
-98 reserver H H 196j_11h01m 198j_09h01m
 
+98 reserver H H 196j_11h01m 198j_09h01m
 verifier disponibilite H 196j_11h01m 198j_09h01m: V = 2, L = 7
 5j_01h00mV = 1, L = 8
 9j_20h00mV = 0, L = 9
@@ -1727,8 +1727,8 @@ verifier retour H 198j_09h01m: V = 2, L = 7
 193j_11h01mV = 3, L = 6
 0j_00h11mV = 3, L = 6
 193j_11h01mV = 2, L = 7
-99 reserver F F 199j_14h01m 200j_17h01m
 
+99 reserver F F 199j_14h01m 200j_17h01m
 verifier disponibilite F 199j_14h01m 200j_17h01m: V = 5, L = 6
 30j_00h00mV = 4, L = 7
 36j_18h00mV = 5, L = 6
@@ -1758,8 +1758,8 @@ verifier retour F 200j_17h01m: V = 5, L = 6
 156j_16h01mV = 7, L = 4
 0j_00h12mV = 7, L = 4
 156j_16h01mV = 6, L = 5
-100 reserver E E 201j_04h01m 201j_22h01m
 
+100 reserver E E 201j_04h01m 201j_22h01m
 verifier disponibilite E 201j_04h01m 201j_22h01m: V = 6, L = 6
 12j_15h00mV = 7, L = 5
 14j_07h00mV = 6, L = 6
@@ -1789,8 +1789,8 @@ verifier retour E 201j_22h01m: V = 6, L = 6
 147j_01h01mV = 2, L = 10
 0j_00h12mV = 2, L = 10
 147j_01h01mV = 1, L = 11
-101 reserver G H 203j_02h01m 204j_18h01m
 
+101 reserver G H 203j_02h01m 204j_18h01m
 verifier disponibilite G 203j_02h01m 204j_18h01m: V = 6, L = 4
 45j_02h00mV = 5, L = 5
 49j_04h00mV = 6, L = 4
@@ -1822,8 +1822,8 @@ verifier retour H 204j_18h01m: V = 2, L = 7
 198j_09h01mV = 3, L = 6
 0j_00h13mV = 3, L = 6
 198j_09h01mV = 4, L = 5
-102 reserver I E 204j_22h01m 206j_04h01m
 
+102 reserver I E 204j_22h01m 206j_04h01m
 verifier disponibilite I 204j_22h01m 206j_04h01m: V = 8, L = 7
 22j_18h00mV = 9, L = 6
 37j_05h00mV = 8, L = 7
@@ -1862,8 +1862,8 @@ verifier retour E 206j_04h01m: V = 6, L = 6
 201j_22h01mV = 2, L = 10
 0j_00h14mV = 2, L = 10
 201j_22h01mV = 3, L = 9
-103 reserver H H 206j_08h01m 207j_18h01m
 
+103 reserver H H 206j_08h01m 207j_18h01m
 verifier disponibilite H 206j_08h01m 207j_18h01m: V = 2, L = 7
 5j_01h00mV = 1, L = 8
 9j_20h00mV = 0, L = 9
@@ -1897,8 +1897,8 @@ verifier retour H 207j_18h01m: V = 2, L = 7
 204j_18h01mV = 4, L = 5
 0j_00h14mV = 4, L = 5
 204j_18h01mV = 5, L = 4
-104 reserver J E 209j_08h01m 210j_15h01m
 
+104 reserver J E 209j_08h01m 210j_15h01m
 verifier disponibilite J 209j_08h01m 210j_15h01m: V = 4, L = 1
 1j_13h00mV = 3, L = 2
 8j_18h00mV = 4, L = 1
@@ -1934,8 +1934,8 @@ verifier retour E 210j_15h01m: V = 6, L = 6
 206j_04h01mV = 3, L = 9
 0j_00h15mV = 3, L = 9
 206j_04h01mV = 4, L = 8
-105 reserver D C 211j_15h01m 213j_07h01m
 
+105 reserver D C 211j_15h01m 213j_07h01m
 verifier disponibilite D 211j_15h01m 213j_07h01m: V = 6, L = 5
 4j_08h00mV = 7, L = 4
 7j_12h00mV = 6, L = 5
@@ -1967,8 +1967,8 @@ verifier retour C 213j_07h01m: V = 3, L = 4
 182j_07h01mV = 6, L = 1
 0j_00h08mV = 6, L = 1
 182j_07h01mV = 7, L = 0
-106 reserver C E 213j_21h01m 214j_19h01m
 
+106 reserver C E 213j_21h01m 214j_19h01m
 verifier disponibilite C 213j_21h01m 214j_19h01m: V = 3, L = 4
 2j_15h00mV = 3, L = 4
 11j_09h00mV = 4, L = 3
@@ -1998,8 +1998,8 @@ verifier retour E 214j_19h01m: V = 6, L = 6
 210j_15h01mV = 4, L = 8
 0j_00h16mV = 4, L = 8
 210j_15h01mV = 5, L = 7
-107 reserver E E 216j_09h01m 217j_21h01m
 
+107 reserver E E 216j_09h01m 217j_21h01m
 verifier disponibilite E 216j_09h01m 217j_21h01m: V = 6, L = 6
 12j_15h00mV = 7, L = 5
 14j_07h00mV = 6, L = 6
@@ -2039,8 +2039,8 @@ verifier retour E 217j_21h01m: V = 6, L = 6
 214j_19h01mV = 5, L = 7
 0j_00h17mV = 5, L = 7
 214j_19h01mV = 6, L = 6
-108 reserver B G 217j_23h01m 219j_18h01m
 
+108 reserver B G 217j_23h01m 219j_18h01m
 verifier disponibilite B 217j_23h01m 219j_18h01m: V = 2, L = 8
 6j_02h00mV = 3, L = 7
 15j_06h00mV = 4, L = 6
@@ -2077,8 +2077,8 @@ verifier retour G 219j_18h01m: V = 6, L = 4
 203j_02h01mV = 6, L = 4
 0j_00h14mV = 6, L = 4
 203j_02h01mV = 5, L = 5
-109 reserver F D 220j_21h01m 222j_16h01m
 
+109 reserver F D 220j_21h01m 222j_16h01m
 verifier disponibilite F 220j_21h01m 222j_16h01m: V = 5, L = 6
 30j_00h00mV = 4, L = 7
 36j_18h00mV = 5, L = 6
@@ -2116,8 +2116,8 @@ verifier retour D 222j_16h01m: V = 6, L = 5
 183j_09h01mV = 2, L = 9
 0j_00h18mV = 2, L = 9
 183j_09h01mV = 1, L = 10
-110 reserver A E 222j_19h01m 224j_05h01m
 
+110 reserver A E 222j_19h01m 224j_05h01m
 verifier disponibilite A 222j_19h01m 224j_05h01m: V = 5, L = 3
 16j_02h00mV = 4, L = 4
 17j_07h00mV = 5, L = 3

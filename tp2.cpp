@@ -40,7 +40,7 @@ int tp2(istream& entree){
             string origine, destination;
             Date debut, fin;
             entree >> origine >> destination >> debut >> fin;
-            clog << id << " " << commande << " " << origine <<  " " << destination << " " << debut << " " << fin << endl << endl;
+            clog << endl << id << " " << commande << " " << origine <<  " " << destination << " " << debut << " " << fin << endl;
             bool ok = false;
             if (fin < debut) {
                 cout << "Commande '" << commande << " " << debut << " " << fin << "' invalide!" << endl;
