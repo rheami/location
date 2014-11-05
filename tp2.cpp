@@ -49,14 +49,23 @@ int tp2(istream& entree){
             Succursale &succursaleO = succursales[origine];
             Succursale &succursaleF = succursales[destination];
             //todo tester si elles existent
-
-            if (succursaleO.verifierDisponibilite(debut, fin) &&
-                succursaleF.verifierRetourPossible(fin)) {
-                succursaleO.ajouterEvenementDepart(debut);
-                succursaleF.ajouterEvenementRetour(fin);
-                ok = true;
+            if (succursaleO==succursaleF) {
+                if (succursaleO.verifierDisponibiliteEtRetour(debut, fin)) {
+                    succursaleO.ajouterEvenementDepart(debut);
+                    succursaleF.ajouterEvenementRetour(fin);
+                    ok = true;
+                }
+            } else {
+                if (succursaleO.verifierDisponibilite(debut, fin) &&
+                        succursaleF.verifierRetourPossible(debut)) {
+                    succursaleO.ajouterEvenementDepart(debut);
+                    succursaleF.ajouterEvenementRetour(fin);
+                    ok = true;
+                }
             }
-            
+
+
+
             cout << (ok ? "Acceptee" : "NonDispo") << endl;
         }else{
             cout << "Commande '" << commande << "' invalide!" << endl;

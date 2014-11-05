@@ -20,9 +20,11 @@ class Succursale{
 
     bool verifierDisponibilite(Date, Date);
     bool verifierRetourPossible(Date);
+    bool verifierDisponibiliteEtRetour(Date, Date);
     void ajouterEvenementDepart(Date);
     void ajouterEvenementRetour(Date);
 
+    bool operator==(const Succursale &) const;
     string getName() const;
 
     ~Succursale() {

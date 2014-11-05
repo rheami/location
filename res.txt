@@ -36,7 +36,7 @@
 36 : Acceptee
 37 : Acceptee
 38 : Acceptee
-39 : NonDispo
+39 : Acceptee
 40 : NonDispo
 41 : NonDispo
 42 : Acceptee
@@ -90,7 +90,7 @@
 90 : Acceptee
 91 : Acceptee
 92 : Acceptee
-93 : NonDispo
+93 : Acceptee
 94 : Acceptee
 95 : NonDispo
 96 : Acceptee
