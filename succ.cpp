@@ -62,10 +62,10 @@ bool Succursale::verifierRetourPossible(Date retour){
 
         // commence a verifier ici
         clog << "commence a verifier" << endl;
-        if (it == evenements.begin()) {
+        if (it == evenements.end()) {
             retourOk = nbLibre > 0;
         } else { // verifie jusqua la fin, arrete si dispo faux
-            for (;retourOk && retour < it->first && it != evenements.end();++it){
+            for (;retourOk && it != evenements.end();++it){
                 nbLibre -= it->second;
                 clog << it->first << "V = " << nbPlaces - nbLibre << ", L = " <<  nbLibre << endl;
                 retourOk = nbLibre > 0;

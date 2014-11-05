@@ -350,8 +350,6 @@ verifier disponibilite A 70j_04h00m 70j_16h00m: V = 5, L = 3
 50j_19h00mV = 6, L = 2
 51j_19h00mV = 7, L = 1
 59j_19h00mV = 8, L = 0
-61j_17h00mV = 7, L = 1
-63j_10h00mV = 8, L = 0
 commence a verifier
 verifier retour F 70j_16h00m: V = 5, L = 6
 30j_00h00mV = 4, L = 7
@@ -370,8 +368,6 @@ verifier disponibilite A 71j_05h00m 72j_17h00m: V = 5, L = 3
 50j_19h00mV = 6, L = 2
 51j_19h00mV = 7, L = 1
 59j_19h00mV = 8, L = 0
-61j_17h00mV = 7, L = 1
-63j_10h00mV = 8, L = 0
 70j_04h00mV = 7, L = 1
 commence a verifier
 verifier retour H 72j_17h00m: V = 2, L = 7
@@ -400,8 +396,6 @@ verifier retour A 74j_03h00m: V = 5, L = 3
 50j_19h00mV = 6, L = 2
 51j_19h00mV = 7, L = 1
 59j_19h00mV = 8, L = 0
-61j_17h00mV = 7, L = 1
-63j_10h00mV = 8, L = 0
 70j_04h00mV = 7, L = 1
 71j_05h00mV = 6, L = 2
 commence a verifier
@@ -417,8 +411,6 @@ verifier disponibilite A 75j_06h00m 77j_06h00m: V = 5, L = 3
 50j_19h00mV = 6, L = 2
 51j_19h00mV = 7, L = 1
 59j_19h00mV = 8, L = 0
-61j_17h00mV = 7, L = 1
-63j_10h00mV = 8, L = 0
 70j_04h00mV = 7, L = 1
 71j_05h00mV = 6, L = 2
 74j_03h00mV = 7, L = 1
@@ -584,8 +576,6 @@ verifier retour A 91j_02h00m: V = 5, L = 3
 50j_19h00mV = 6, L = 2
 51j_19h00mV = 7, L = 1
 59j_19h00mV = 8, L = 0
-61j_17h00mV = 7, L = 1
-63j_10h00mV = 8, L = 0
 70j_04h00mV = 7, L = 1
 71j_05h00mV = 6, L = 2
 74j_03h00mV = 7, L = 1
@@ -814,8 +804,6 @@ verifier disponibilite A 113j_12h00m 115j_03h00m: V = 5, L = 3
 50j_19h00mV = 6, L = 2
 51j_19h00mV = 7, L = 1
 59j_19h00mV = 8, L = 0
-61j_17h00mV = 7, L = 1
-63j_10h00mV = 8, L = 0
 70j_04h00mV = 7, L = 1
 71j_05h00mV = 6, L = 2
 74j_03h00mV = 7, L = 1
@@ -929,14 +917,11 @@ verifier retour A 125j_16h00m: V = 5, L = 3
 50j_19h00mV = 6, L = 2
 51j_19h00mV = 7, L = 1
 59j_19h00mV = 8, L = 0
-61j_17h00mV = 7, L = 1
-63j_10h00mV = 8, L = 0
 70j_04h00mV = 7, L = 1
 71j_05h00mV = 6, L = 2
 74j_03h00mV = 7, L = 1
 75j_06h00mV = 6, L = 2
 91j_02h00mV = 7, L = 1
-113j_12h00mV = 6, L = 2
 commence a verifier
 
 69 reserver I B 127j_00h00m 128j_04h00m
@@ -1013,15 +998,12 @@ verifier retour A 133j_06h01m: V = 5, L = 3
 50j_19h00mV = 6, L = 2
 51j_19h00mV = 7, L = 1
 59j_19h00mV = 8, L = 0
-61j_17h00mV = 7, L = 1
-63j_10h00mV = 8, L = 0
 70j_04h00mV = 7, L = 1
 71j_05h00mV = 6, L = 2
 74j_03h00mV = 7, L = 1
 75j_06h00mV = 6, L = 2
 91j_02h00mV = 7, L = 1
-113j_12h00mV = 6, L = 2
-125j_16h00mV = 7, L = 1
+125j_16h00mV = 8, L = 0
 commence a verifier
 
 72 reserver B A 133j_16h01m 134j_08h01m
@@ -1050,16 +1032,12 @@ verifier retour A 134j_08h01m: V = 5, L = 3
 50j_19h00mV = 6, L = 2
 51j_19h00mV = 7, L = 1
 59j_19h00mV = 8, L = 0
-61j_17h00mV = 7, L = 1
-63j_10h00mV = 8, L = 0
 70j_04h00mV = 7, L = 1
 71j_05h00mV = 6, L = 2
 74j_03h00mV = 7, L = 1
 75j_06h00mV = 6, L = 2
 91j_02h00mV = 7, L = 1
-113j_12h00mV = 6, L = 2
-125j_16h00mV = 7, L = 1
-133j_06h01mV = 8, L = 0
+125j_16h00mV = 8, L = 0
 commence a verifier
 
 73 reserver F H 136j_02h01m 138j_00h01m
@@ -1092,7 +1070,6 @@ verifier disponibilite E 139j_10h01m 140j_23h01m: V = 6, L = 6
 103j_12h00mV = 4, L = 8
 110j_12h00mV = 3, L = 9
 131j_04h00mV = 4, L = 8
-131j_19h01mV = 3, L = 9
 commence a verifier
 verifier retour H 140j_23h01m: V = 2, L = 7
 5j_01h00mV = 1, L = 8
@@ -1157,7 +1134,6 @@ verifier retour B 146j_14h01m: V = 2, L = 8
 101j_07h00mV = 3, L = 7
 123j_23h00mV = 2, L = 8
 128j_04h00mV = 3, L = 7
-133j_16h01mV = 2, L = 8
 commence a verifier
 
 77 reserver E F 147j_01h01m 147j_21h01m
@@ -1172,8 +1148,7 @@ verifier disponibilite E 147j_01h01m 147j_21h01m: V = 6, L = 6
 103j_12h00mV = 4, L = 8
 110j_12h00mV = 3, L = 9
 131j_04h00mV = 4, L = 8
-131j_19h01mV = 3, L = 9
-139j_10h01mV = 2, L = 10
+139j_10h01mV = 3, L = 9
 commence a verifier
 verifier retour F 147j_21h01m: V = 5, L = 6
 30j_00h00mV = 4, L = 7
@@ -1217,4 +1192,1065 @@ verifier retour C 149j_14h01m: V = 3, L = 4
 91j_10h00mV = 5, L = 2
 93j_03h00mV = 6, L = 1
 109j_17h00mV = 7, L = 0
-115j_03h00mV = 8, L = -1
+commence a verifier
+
+79 reserver J J 151j_07h01m 152j_00h01m
+verifier disponibilite J 151j_07h01m 152j_00h01m: V = 4, L = 1
+1j_13h00mV = 3, L = 2
+8j_18h00mV = 4, L = 1
+24j_08h00mV = 3, L = 2
+31j_15h00mV = 4, L = 1
+69j_03h00mV = 5, L = 0
+81j_16h00mV = 4, L = 1
+104j_04h00mV = 3, L = 2
+105j_19h00mV = 2, L = 3
+107j_04h00mV = 3, L = 2
+118j_00h00mV = 2, L = 3
+commence a verifier
+verifier retour J 152j_00h01m: V = 4, L = 1
+1j_13h00mV = 3, L = 2
+8j_18h00mV = 4, L = 1
+24j_08h00mV = 3, L = 2
+31j_15h00mV = 4, L = 1
+69j_03h00mV = 5, L = 0
+81j_16h00mV = 4, L = 1
+104j_04h00mV = 3, L = 2
+105j_19h00mV = 2, L = 3
+107j_04h00mV = 3, L = 2
+118j_00h00mV = 2, L = 3
+commence a verifier
+
+80 reserver I I 152j_23h01m 154j_20h01m
+verifier disponibilite I 152j_23h01m 154j_20h01m: V = 8, L = 7
+22j_18h00mV = 9, L = 6
+37j_05h00mV = 8, L = 7
+39j_17h00mV = 7, L = 8
+46j_07h00mV = 6, L = 9
+48j_16h00mV = 5, L = 10
+56j_01h00mV = 4, L = 11
+57j_06h00mV = 5, L = 10
+88j_19h00mV = 4, L = 11
+89j_23h00mV = 5, L = 10
+108j_13h00mV = 4, L = 11
+111j_15h00mV = 5, L = 10
+113j_02h00mV = 6, L = 9
+115j_21h00mV = 5, L = 10
+117j_18h00mV = 6, L = 9
+127j_00h00mV = 5, L = 10
+144j_17h01mV = 4, L = 11
+commence a verifier
+verifier retour I 154j_20h01m: V = 8, L = 7
+22j_18h00mV = 9, L = 6
+37j_05h00mV = 8, L = 7
+39j_17h00mV = 7, L = 8
+46j_07h00mV = 6, L = 9
+48j_16h00mV = 5, L = 10
+56j_01h00mV = 4, L = 11
+57j_06h00mV = 5, L = 10
+88j_19h00mV = 4, L = 11
+89j_23h00mV = 5, L = 10
+108j_13h00mV = 4, L = 11
+111j_15h00mV = 5, L = 10
+113j_02h00mV = 6, L = 9
+115j_21h00mV = 5, L = 10
+117j_18h00mV = 6, L = 9
+127j_00h00mV = 5, L = 10
+144j_17h01mV = 4, L = 11
+commence a verifier
+
+81 reserver F J 156j_16h01m 158j_06h01m
+verifier disponibilite F 156j_16h01m 158j_06h01m: V = 5, L = 6
+30j_00h00mV = 4, L = 7
+36j_18h00mV = 5, L = 6
+42j_20h00mV = 6, L = 5
+70j_16h00mV = 7, L = 4
+93j_21h00mV = 6, L = 5
+95j_20h00mV = 7, L = 4
+119j_10h00mV = 8, L = 3
+136j_02h01mV = 7, L = 4
+141j_08h01mV = 6, L = 5
+142j_22h01mV = 7, L = 4
+147j_21h01mV = 8, L = 3
+commence a verifier
+verifier retour J 158j_06h01m: V = 4, L = 1
+1j_13h00mV = 3, L = 2
+8j_18h00mV = 4, L = 1
+24j_08h00mV = 3, L = 2
+31j_15h00mV = 4, L = 1
+69j_03h00mV = 5, L = 0
+81j_16h00mV = 4, L = 1
+104j_04h00mV = 3, L = 2
+105j_19h00mV = 2, L = 3
+107j_04h00mV = 3, L = 2
+118j_00h00mV = 2, L = 3
+151j_07h01mV = 1, L = 4
+152j_00h01mV = 2, L = 3
+commence a verifier
+
+82 reserver J G 159j_00h01m 160j_13h01m
+verifier disponibilite J 159j_00h01m 160j_13h01m: V = 4, L = 1
+1j_13h00mV = 3, L = 2
+8j_18h00mV = 4, L = 1
+24j_08h00mV = 3, L = 2
+31j_15h00mV = 4, L = 1
+69j_03h00mV = 5, L = 0
+81j_16h00mV = 4, L = 1
+104j_04h00mV = 3, L = 2
+105j_19h00mV = 2, L = 3
+107j_04h00mV = 3, L = 2
+118j_00h00mV = 2, L = 3
+151j_07h01mV = 1, L = 4
+152j_00h01mV = 2, L = 3
+158j_06h01mV = 3, L = 2
+commence a verifier
+verifier retour G 160j_13h01m: V = 6, L = 4
+45j_02h00mV = 5, L = 5
+49j_04h00mV = 6, L = 4
+55j_12h00mV = 7, L = 3
+67j_15h00mV = 6, L = 4
+97j_15h00mV = 5, L = 5
+99j_15h00mV = 6, L = 4
+105j_15h00mV = 7, L = 3
+121j_07h00mV = 6, L = 4
+122j_12h00mV = 7, L = 3
+commence a verifier
+
+83 reserver A B 161j_05h01m 162j_21h01m
+verifier disponibilite A 161j_05h01m 162j_21h01m: V = 5, L = 3
+16j_02h00mV = 4, L = 4
+17j_07h00mV = 5, L = 3
+20j_18h00mV = 6, L = 2
+24j_00h00mV = 7, L = 1
+31j_17h00mV = 6, L = 2
+33j_09h00mV = 7, L = 1
+50j_19h00mV = 6, L = 2
+51j_19h00mV = 7, L = 1
+59j_19h00mV = 8, L = 0
+70j_04h00mV = 7, L = 1
+71j_05h00mV = 6, L = 2
+74j_03h00mV = 7, L = 1
+75j_06h00mV = 6, L = 2
+91j_02h00mV = 7, L = 1
+125j_16h00mV = 8, L = 0
+commence a verifier
+verifier retour B 162j_21h01m: V = 2, L = 8
+6j_02h00mV = 3, L = 7
+15j_06h00mV = 4, L = 6
+25j_07h00mV = 5, L = 5
+35j_09h00mV = 4, L = 6
+52j_13h00mV = 3, L = 7
+59j_02h00mV = 2, L = 8
+79j_08h00mV = 1, L = 9
+80j_10h00mV = 2, L = 8
+85j_16h00mV = 3, L = 7
+89j_23h00mV = 2, L = 8
+101j_07h00mV = 3, L = 7
+123j_23h00mV = 2, L = 8
+128j_04h00mV = 3, L = 7
+146j_14h01mV = 4, L = 6
+commence a verifier
+
+84 reserver H H 164j_03h01m 165j_12h01m
+verifier disponibilite H 164j_03h01m 165j_12h01m: V = 2, L = 7
+5j_01h00mV = 1, L = 8
+9j_20h00mV = 0, L = 9
+72j_17h00mV = 1, L = 8
+77j_06h00mV = 2, L = 7
+129j_22h00mV = 1, L = 8
+138j_00h01mV = 2, L = 7
+140j_23h01mV = 3, L = 6
+commence a verifier
+verifier retour H 165j_12h01m: V = 2, L = 7
+5j_01h00mV = 1, L = 8
+9j_20h00mV = 0, L = 9
+72j_17h00mV = 1, L = 8
+77j_06h00mV = 2, L = 7
+129j_22h00mV = 1, L = 8
+138j_00h01mV = 2, L = 7
+140j_23h01mV = 3, L = 6
+commence a verifier
+
+85 reserver J D 166j_17h01m 167j_15h01m
+verifier disponibilite J 166j_17h01m 167j_15h01m: V = 4, L = 1
+1j_13h00mV = 3, L = 2
+8j_18h00mV = 4, L = 1
+24j_08h00mV = 3, L = 2
+31j_15h00mV = 4, L = 1
+69j_03h00mV = 5, L = 0
+81j_16h00mV = 4, L = 1
+104j_04h00mV = 3, L = 2
+105j_19h00mV = 2, L = 3
+107j_04h00mV = 3, L = 2
+118j_00h00mV = 2, L = 3
+151j_07h01mV = 1, L = 4
+152j_00h01mV = 2, L = 3
+158j_06h01mV = 3, L = 2
+159j_00h01mV = 2, L = 3
+commence a verifier
+verifier retour D 167j_15h01m: V = 6, L = 5
+4j_08h00mV = 7, L = 4
+7j_12h00mV = 6, L = 5
+11j_13h00mV = 5, L = 6
+18j_21h00mV = 4, L = 7
+26j_17h00mV = 3, L = 8
+28j_11h00mV = 4, L = 7
+53j_17h00mV = 5, L = 6
+54j_09h00mV = 4, L = 7
+72j_21h00mV = 3, L = 8
+77j_07h00mV = 2, L = 9
+78j_03h00mV = 3, L = 8
+83j_08h00mV = 4, L = 7
+85j_22h00mV = 3, L = 8
+87j_13h00mV = 4, L = 7
+100j_06h00mV = 3, L = 8
+112j_09h00mV = 2, L = 9
+commence a verifier
+
+86 reserver J G 168j_15h01m 170j_03h01m
+verifier disponibilite J 168j_15h01m 170j_03h01m: V = 4, L = 1
+1j_13h00mV = 3, L = 2
+8j_18h00mV = 4, L = 1
+24j_08h00mV = 3, L = 2
+31j_15h00mV = 4, L = 1
+69j_03h00mV = 5, L = 0
+81j_16h00mV = 4, L = 1
+104j_04h00mV = 3, L = 2
+105j_19h00mV = 2, L = 3
+107j_04h00mV = 3, L = 2
+118j_00h00mV = 2, L = 3
+151j_07h01mV = 1, L = 4
+152j_00h01mV = 2, L = 3
+158j_06h01mV = 3, L = 2
+159j_00h01mV = 2, L = 3
+166j_17h01mV = 1, L = 4
+commence a verifier
+verifier retour G 170j_03h01m: V = 6, L = 4
+45j_02h00mV = 5, L = 5
+49j_04h00mV = 6, L = 4
+55j_12h00mV = 7, L = 3
+67j_15h00mV = 6, L = 4
+97j_15h00mV = 5, L = 5
+99j_15h00mV = 6, L = 4
+105j_15h00mV = 7, L = 3
+121j_07h00mV = 6, L = 4
+122j_12h00mV = 7, L = 3
+160j_13h01mV = 8, L = 2
+commence a verifier
+
+87 reserver E C 170j_03h01m 171j_22h01m
+verifier disponibilite E 170j_03h01m 171j_22h01m: V = 6, L = 6
+12j_15h00mV = 7, L = 5
+14j_07h00mV = 6, L = 6
+21j_20h00mV = 5, L = 7
+41j_16h00mV = 4, L = 8
+45j_19h00mV = 5, L = 7
+84j_00h00mV = 4, L = 8
+102j_04h00mV = 3, L = 9
+103j_12h00mV = 4, L = 8
+110j_12h00mV = 3, L = 9
+131j_04h00mV = 4, L = 8
+139j_10h01mV = 3, L = 9
+147j_01h01mV = 2, L = 10
+commence a verifier
+verifier retour C 171j_22h01m: V = 3, L = 4
+2j_15h00mV = 3, L = 4
+11j_09h00mV = 4, L = 3
+23j_07h00mV = 3, L = 4
+37j_19h00mV = 4, L = 3
+41j_02h00mV = 5, L = 2
+48j_07h00mV = 6, L = 1
+91j_10h00mV = 5, L = 2
+93j_03h00mV = 6, L = 1
+109j_17h00mV = 7, L = 0
+commence a verifier
+
+88 reserver C A 171j_22h01m 172j_16h01m
+verifier disponibilite C 171j_22h01m 172j_16h01m: V = 3, L = 4
+2j_15h00mV = 3, L = 4
+11j_09h00mV = 4, L = 3
+23j_07h00mV = 3, L = 4
+37j_19h00mV = 4, L = 3
+41j_02h00mV = 5, L = 2
+48j_07h00mV = 6, L = 1
+91j_10h00mV = 5, L = 2
+93j_03h00mV = 6, L = 1
+109j_17h00mV = 7, L = 0
+commence a verifier
+verifier retour A 172j_16h01m: V = 5, L = 3
+16j_02h00mV = 4, L = 4
+17j_07h00mV = 5, L = 3
+20j_18h00mV = 6, L = 2
+24j_00h00mV = 7, L = 1
+31j_17h00mV = 6, L = 2
+33j_09h00mV = 7, L = 1
+50j_19h00mV = 6, L = 2
+51j_19h00mV = 7, L = 1
+59j_19h00mV = 8, L = 0
+70j_04h00mV = 7, L = 1
+71j_05h00mV = 6, L = 2
+74j_03h00mV = 7, L = 1
+75j_06h00mV = 6, L = 2
+91j_02h00mV = 7, L = 1
+125j_16h00mV = 8, L = 0
+161j_05h01mV = 7, L = 1
+commence a verifier
+
+89 reserver B B 173j_17h01m 175j_17h01m
+verifier disponibilite B 173j_17h01m 175j_17h01m: V = 2, L = 8
+6j_02h00mV = 3, L = 7
+15j_06h00mV = 4, L = 6
+25j_07h00mV = 5, L = 5
+35j_09h00mV = 4, L = 6
+52j_13h00mV = 3, L = 7
+59j_02h00mV = 2, L = 8
+79j_08h00mV = 1, L = 9
+80j_10h00mV = 2, L = 8
+85j_16h00mV = 3, L = 7
+89j_23h00mV = 2, L = 8
+101j_07h00mV = 3, L = 7
+123j_23h00mV = 2, L = 8
+128j_04h00mV = 3, L = 7
+146j_14h01mV = 4, L = 6
+162j_21h01mV = 5, L = 5
+commence a verifier
+verifier retour B 175j_17h01m: V = 2, L = 8
+6j_02h00mV = 3, L = 7
+15j_06h00mV = 4, L = 6
+25j_07h00mV = 5, L = 5
+35j_09h00mV = 4, L = 6
+52j_13h00mV = 3, L = 7
+59j_02h00mV = 2, L = 8
+79j_08h00mV = 1, L = 9
+80j_10h00mV = 2, L = 8
+85j_16h00mV = 3, L = 7
+89j_23h00mV = 2, L = 8
+101j_07h00mV = 3, L = 7
+123j_23h00mV = 2, L = 8
+128j_04h00mV = 3, L = 7
+146j_14h01mV = 4, L = 6
+162j_21h01mV = 5, L = 5
+commence a verifier
+
+90 reserver G H 177j_14h01m 178j_15h01m
+verifier disponibilite G 177j_14h01m 178j_15h01m: V = 6, L = 4
+45j_02h00mV = 5, L = 5
+49j_04h00mV = 6, L = 4
+55j_12h00mV = 7, L = 3
+67j_15h00mV = 6, L = 4
+97j_15h00mV = 5, L = 5
+99j_15h00mV = 6, L = 4
+105j_15h00mV = 7, L = 3
+121j_07h00mV = 6, L = 4
+122j_12h00mV = 7, L = 3
+160j_13h01mV = 8, L = 2
+170j_03h01mV = 9, L = 1
+commence a verifier
+verifier retour H 178j_15h01m: V = 2, L = 7
+5j_01h00mV = 1, L = 8
+9j_20h00mV = 0, L = 9
+72j_17h00mV = 1, L = 8
+77j_06h00mV = 2, L = 7
+129j_22h00mV = 1, L = 8
+138j_00h01mV = 2, L = 7
+140j_23h01mV = 3, L = 6
+164j_03h01mV = 2, L = 7
+165j_12h01mV = 3, L = 6
+commence a verifier
+
+91 reserver G C 180j_14h01m 182j_07h01m
+verifier disponibilite G 180j_14h01m 182j_07h01m: V = 6, L = 4
+45j_02h00mV = 5, L = 5
+49j_04h00mV = 6, L = 4
+55j_12h00mV = 7, L = 3
+67j_15h00mV = 6, L = 4
+97j_15h00mV = 5, L = 5
+99j_15h00mV = 6, L = 4
+105j_15h00mV = 7, L = 3
+121j_07h00mV = 6, L = 4
+122j_12h00mV = 7, L = 3
+160j_13h01mV = 8, L = 2
+170j_03h01mV = 9, L = 1
+177j_14h01mV = 8, L = 2
+commence a verifier
+verifier retour C 182j_07h01m: V = 3, L = 4
+2j_15h00mV = 3, L = 4
+11j_09h00mV = 4, L = 3
+23j_07h00mV = 3, L = 4
+37j_19h00mV = 4, L = 3
+41j_02h00mV = 5, L = 2
+48j_07h00mV = 6, L = 1
+91j_10h00mV = 5, L = 2
+93j_03h00mV = 6, L = 1
+109j_17h00mV = 7, L = 0
+171j_22h01mV = 6, L = 1
+commence a verifier
+
+92 reserver D I 183j_09h01m 184j_04h01m
+verifier disponibilite D 183j_09h01m 184j_04h01m: V = 6, L = 5
+4j_08h00mV = 7, L = 4
+7j_12h00mV = 6, L = 5
+11j_13h00mV = 5, L = 6
+18j_21h00mV = 4, L = 7
+26j_17h00mV = 3, L = 8
+28j_11h00mV = 4, L = 7
+53j_17h00mV = 5, L = 6
+54j_09h00mV = 4, L = 7
+72j_21h00mV = 3, L = 8
+77j_07h00mV = 2, L = 9
+78j_03h00mV = 3, L = 8
+83j_08h00mV = 4, L = 7
+85j_22h00mV = 3, L = 8
+87j_13h00mV = 4, L = 7
+100j_06h00mV = 3, L = 8
+112j_09h00mV = 2, L = 9
+167j_15h01mV = 3, L = 8
+commence a verifier
+verifier retour I 184j_04h01m: V = 8, L = 7
+22j_18h00mV = 9, L = 6
+37j_05h00mV = 8, L = 7
+39j_17h00mV = 7, L = 8
+46j_07h00mV = 6, L = 9
+48j_16h00mV = 5, L = 10
+56j_01h00mV = 4, L = 11
+57j_06h00mV = 5, L = 10
+88j_19h00mV = 4, L = 11
+89j_23h00mV = 5, L = 10
+108j_13h00mV = 4, L = 11
+111j_15h00mV = 5, L = 10
+113j_02h00mV = 6, L = 9
+115j_21h00mV = 5, L = 10
+117j_18h00mV = 6, L = 9
+127j_00h00mV = 5, L = 10
+144j_17h01mV = 4, L = 11
+152j_23h01mV = 3, L = 12
+154j_20h01mV = 4, L = 11
+commence a verifier
+
+93 reserver A A 185j_03h01m 186j_22h01m
+verifier disponibilite A 185j_03h01m 186j_22h01m: V = 5, L = 3
+16j_02h00mV = 4, L = 4
+17j_07h00mV = 5, L = 3
+20j_18h00mV = 6, L = 2
+24j_00h00mV = 7, L = 1
+31j_17h00mV = 6, L = 2
+33j_09h00mV = 7, L = 1
+50j_19h00mV = 6, L = 2
+51j_19h00mV = 7, L = 1
+59j_19h00mV = 8, L = 0
+70j_04h00mV = 7, L = 1
+71j_05h00mV = 6, L = 2
+74j_03h00mV = 7, L = 1
+75j_06h00mV = 6, L = 2
+91j_02h00mV = 7, L = 1
+125j_16h00mV = 8, L = 0
+161j_05h01mV = 7, L = 1
+172j_16h01mV = 8, L = 0
+commence a verifier
+verifier retour A 186j_22h01m: V = 5, L = 3
+16j_02h00mV = 4, L = 4
+17j_07h00mV = 5, L = 3
+20j_18h00mV = 6, L = 2
+24j_00h00mV = 7, L = 1
+31j_17h00mV = 6, L = 2
+33j_09h00mV = 7, L = 1
+50j_19h00mV = 6, L = 2
+51j_19h00mV = 7, L = 1
+59j_19h00mV = 8, L = 0
+70j_04h00mV = 7, L = 1
+71j_05h00mV = 6, L = 2
+74j_03h00mV = 7, L = 1
+75j_06h00mV = 6, L = 2
+91j_02h00mV = 7, L = 1
+125j_16h00mV = 8, L = 0
+161j_05h01mV = 7, L = 1
+172j_16h01mV = 8, L = 0
+commence a verifier
+
+94 reserver I G 187j_02h01m 188j_05h01m
+verifier disponibilite I 187j_02h01m 188j_05h01m: V = 8, L = 7
+22j_18h00mV = 9, L = 6
+37j_05h00mV = 8, L = 7
+39j_17h00mV = 7, L = 8
+46j_07h00mV = 6, L = 9
+48j_16h00mV = 5, L = 10
+56j_01h00mV = 4, L = 11
+57j_06h00mV = 5, L = 10
+88j_19h00mV = 4, L = 11
+89j_23h00mV = 5, L = 10
+108j_13h00mV = 4, L = 11
+111j_15h00mV = 5, L = 10
+113j_02h00mV = 6, L = 9
+115j_21h00mV = 5, L = 10
+117j_18h00mV = 6, L = 9
+127j_00h00mV = 5, L = 10
+144j_17h01mV = 4, L = 11
+152j_23h01mV = 3, L = 12
+154j_20h01mV = 4, L = 11
+184j_04h01mV = 5, L = 10
+commence a verifier
+verifier retour G 188j_05h01m: V = 6, L = 4
+45j_02h00mV = 5, L = 5
+49j_04h00mV = 6, L = 4
+55j_12h00mV = 7, L = 3
+67j_15h00mV = 6, L = 4
+97j_15h00mV = 5, L = 5
+99j_15h00mV = 6, L = 4
+105j_15h00mV = 7, L = 3
+121j_07h00mV = 6, L = 4
+122j_12h00mV = 7, L = 3
+160j_13h01mV = 8, L = 2
+170j_03h01mV = 9, L = 1
+177j_14h01mV = 8, L = 2
+180j_14h01mV = 7, L = 3
+commence a verifier
+
+95 reserver J E 188j_07h01m 188j_19h01m
+verifier disponibilite J 188j_07h01m 188j_19h01m: V = 4, L = 1
+1j_13h00mV = 3, L = 2
+8j_18h00mV = 4, L = 1
+24j_08h00mV = 3, L = 2
+31j_15h00mV = 4, L = 1
+69j_03h00mV = 5, L = 0
+81j_16h00mV = 4, L = 1
+104j_04h00mV = 3, L = 2
+105j_19h00mV = 2, L = 3
+107j_04h00mV = 3, L = 2
+118j_00h00mV = 2, L = 3
+151j_07h01mV = 1, L = 4
+152j_00h01mV = 2, L = 3
+158j_06h01mV = 3, L = 2
+159j_00h01mV = 2, L = 3
+166j_17h01mV = 1, L = 4
+168j_15h01mV = 0, L = 5
+commence a verifier
+
+96 reserver G J 190j_11h01m 191j_22h01m
+verifier disponibilite G 190j_11h01m 191j_22h01m: V = 6, L = 4
+45j_02h00mV = 5, L = 5
+49j_04h00mV = 6, L = 4
+55j_12h00mV = 7, L = 3
+67j_15h00mV = 6, L = 4
+97j_15h00mV = 5, L = 5
+99j_15h00mV = 6, L = 4
+105j_15h00mV = 7, L = 3
+121j_07h00mV = 6, L = 4
+122j_12h00mV = 7, L = 3
+160j_13h01mV = 8, L = 2
+170j_03h01mV = 9, L = 1
+177j_14h01mV = 8, L = 2
+180j_14h01mV = 7, L = 3
+188j_05h01mV = 8, L = 2
+commence a verifier
+verifier retour J 191j_22h01m: V = 4, L = 1
+1j_13h00mV = 3, L = 2
+8j_18h00mV = 4, L = 1
+24j_08h00mV = 3, L = 2
+31j_15h00mV = 4, L = 1
+69j_03h00mV = 5, L = 0
+81j_16h00mV = 4, L = 1
+104j_04h00mV = 3, L = 2
+105j_19h00mV = 2, L = 3
+107j_04h00mV = 3, L = 2
+118j_00h00mV = 2, L = 3
+151j_07h01mV = 1, L = 4
+152j_00h01mV = 2, L = 3
+158j_06h01mV = 3, L = 2
+159j_00h01mV = 2, L = 3
+166j_17h01mV = 1, L = 4
+168j_15h01mV = 0, L = 5
+commence a verifier
+
+97 reserver H B 193j_11h01m 195j_05h01m
+verifier disponibilite H 193j_11h01m 195j_05h01m: V = 2, L = 7
+5j_01h00mV = 1, L = 8
+9j_20h00mV = 0, L = 9
+72j_17h00mV = 1, L = 8
+77j_06h00mV = 2, L = 7
+129j_22h00mV = 1, L = 8
+138j_00h01mV = 2, L = 7
+140j_23h01mV = 3, L = 6
+164j_03h01mV = 2, L = 7
+165j_12h01mV = 3, L = 6
+178j_15h01mV = 4, L = 5
+commence a verifier
+verifier retour B 195j_05h01m: V = 2, L = 8
+6j_02h00mV = 3, L = 7
+15j_06h00mV = 4, L = 6
+25j_07h00mV = 5, L = 5
+35j_09h00mV = 4, L = 6
+52j_13h00mV = 3, L = 7
+59j_02h00mV = 2, L = 8
+79j_08h00mV = 1, L = 9
+80j_10h00mV = 2, L = 8
+85j_16h00mV = 3, L = 7
+89j_23h00mV = 2, L = 8
+101j_07h00mV = 3, L = 7
+123j_23h00mV = 2, L = 8
+128j_04h00mV = 3, L = 7
+146j_14h01mV = 4, L = 6
+162j_21h01mV = 5, L = 5
+173j_17h01mV = 4, L = 6
+175j_17h01mV = 5, L = 5
+commence a verifier
+
+98 reserver H H 196j_11h01m 198j_09h01m
+verifier disponibilite H 196j_11h01m 198j_09h01m: V = 2, L = 7
+5j_01h00mV = 1, L = 8
+9j_20h00mV = 0, L = 9
+72j_17h00mV = 1, L = 8
+77j_06h00mV = 2, L = 7
+129j_22h00mV = 1, L = 8
+138j_00h01mV = 2, L = 7
+140j_23h01mV = 3, L = 6
+164j_03h01mV = 2, L = 7
+165j_12h01mV = 3, L = 6
+178j_15h01mV = 4, L = 5
+193j_11h01mV = 3, L = 6
+commence a verifier
+verifier retour H 198j_09h01m: V = 2, L = 7
+5j_01h00mV = 1, L = 8
+9j_20h00mV = 0, L = 9
+72j_17h00mV = 1, L = 8
+77j_06h00mV = 2, L = 7
+129j_22h00mV = 1, L = 8
+138j_00h01mV = 2, L = 7
+140j_23h01mV = 3, L = 6
+164j_03h01mV = 2, L = 7
+165j_12h01mV = 3, L = 6
+178j_15h01mV = 4, L = 5
+193j_11h01mV = 3, L = 6
+commence a verifier
+
+99 reserver F F 199j_14h01m 200j_17h01m
+verifier disponibilite F 199j_14h01m 200j_17h01m: V = 5, L = 6
+30j_00h00mV = 4, L = 7
+36j_18h00mV = 5, L = 6
+42j_20h00mV = 6, L = 5
+70j_16h00mV = 7, L = 4
+93j_21h00mV = 6, L = 5
+95j_20h00mV = 7, L = 4
+119j_10h00mV = 8, L = 3
+136j_02h01mV = 7, L = 4
+141j_08h01mV = 6, L = 5
+142j_22h01mV = 7, L = 4
+147j_21h01mV = 8, L = 3
+156j_16h01mV = 7, L = 4
+commence a verifier
+verifier retour F 200j_17h01m: V = 5, L = 6
+30j_00h00mV = 4, L = 7
+36j_18h00mV = 5, L = 6
+42j_20h00mV = 6, L = 5
+70j_16h00mV = 7, L = 4
+93j_21h00mV = 6, L = 5
+95j_20h00mV = 7, L = 4
+119j_10h00mV = 8, L = 3
+136j_02h01mV = 7, L = 4
+141j_08h01mV = 6, L = 5
+142j_22h01mV = 7, L = 4
+147j_21h01mV = 8, L = 3
+156j_16h01mV = 7, L = 4
+commence a verifier
+
+100 reserver E E 201j_04h01m 201j_22h01m
+verifier disponibilite E 201j_04h01m 201j_22h01m: V = 6, L = 6
+12j_15h00mV = 7, L = 5
+14j_07h00mV = 6, L = 6
+21j_20h00mV = 5, L = 7
+41j_16h00mV = 4, L = 8
+45j_19h00mV = 5, L = 7
+84j_00h00mV = 4, L = 8
+102j_04h00mV = 3, L = 9
+103j_12h00mV = 4, L = 8
+110j_12h00mV = 3, L = 9
+131j_04h00mV = 4, L = 8
+139j_10h01mV = 3, L = 9
+147j_01h01mV = 2, L = 10
+commence a verifier
+verifier retour E 201j_22h01m: V = 6, L = 6
+12j_15h00mV = 7, L = 5
+14j_07h00mV = 6, L = 6
+21j_20h00mV = 5, L = 7
+41j_16h00mV = 4, L = 8
+45j_19h00mV = 5, L = 7
+84j_00h00mV = 4, L = 8
+102j_04h00mV = 3, L = 9
+103j_12h00mV = 4, L = 8
+110j_12h00mV = 3, L = 9
+131j_04h00mV = 4, L = 8
+139j_10h01mV = 3, L = 9
+147j_01h01mV = 2, L = 10
+commence a verifier
+
+101 reserver G H 203j_02h01m 204j_18h01m
+verifier disponibilite G 203j_02h01m 204j_18h01m: V = 6, L = 4
+45j_02h00mV = 5, L = 5
+49j_04h00mV = 6, L = 4
+55j_12h00mV = 7, L = 3
+67j_15h00mV = 6, L = 4
+97j_15h00mV = 5, L = 5
+99j_15h00mV = 6, L = 4
+105j_15h00mV = 7, L = 3
+121j_07h00mV = 6, L = 4
+122j_12h00mV = 7, L = 3
+160j_13h01mV = 8, L = 2
+170j_03h01mV = 9, L = 1
+177j_14h01mV = 8, L = 2
+180j_14h01mV = 7, L = 3
+188j_05h01mV = 8, L = 2
+190j_11h01mV = 7, L = 3
+commence a verifier
+verifier retour H 204j_18h01m: V = 2, L = 7
+5j_01h00mV = 1, L = 8
+9j_20h00mV = 0, L = 9
+72j_17h00mV = 1, L = 8
+77j_06h00mV = 2, L = 7
+129j_22h00mV = 1, L = 8
+138j_00h01mV = 2, L = 7
+140j_23h01mV = 3, L = 6
+164j_03h01mV = 2, L = 7
+165j_12h01mV = 3, L = 6
+178j_15h01mV = 4, L = 5
+193j_11h01mV = 3, L = 6
+196j_11h01mV = 2, L = 7
+198j_09h01mV = 3, L = 6
+commence a verifier
+
+102 reserver I E 204j_22h01m 206j_04h01m
+verifier disponibilite I 204j_22h01m 206j_04h01m: V = 8, L = 7
+22j_18h00mV = 9, L = 6
+37j_05h00mV = 8, L = 7
+39j_17h00mV = 7, L = 8
+46j_07h00mV = 6, L = 9
+48j_16h00mV = 5, L = 10
+56j_01h00mV = 4, L = 11
+57j_06h00mV = 5, L = 10
+88j_19h00mV = 4, L = 11
+89j_23h00mV = 5, L = 10
+108j_13h00mV = 4, L = 11
+111j_15h00mV = 5, L = 10
+113j_02h00mV = 6, L = 9
+115j_21h00mV = 5, L = 10
+117j_18h00mV = 6, L = 9
+127j_00h00mV = 5, L = 10
+144j_17h01mV = 4, L = 11
+152j_23h01mV = 3, L = 12
+154j_20h01mV = 4, L = 11
+184j_04h01mV = 5, L = 10
+187j_02h01mV = 4, L = 11
+commence a verifier
+verifier retour E 206j_04h01m: V = 6, L = 6
+12j_15h00mV = 7, L = 5
+14j_07h00mV = 6, L = 6
+21j_20h00mV = 5, L = 7
+41j_16h00mV = 4, L = 8
+45j_19h00mV = 5, L = 7
+84j_00h00mV = 4, L = 8
+102j_04h00mV = 3, L = 9
+103j_12h00mV = 4, L = 8
+110j_12h00mV = 3, L = 9
+131j_04h00mV = 4, L = 8
+139j_10h01mV = 3, L = 9
+147j_01h01mV = 2, L = 10
+201j_04h01mV = 1, L = 11
+201j_22h01mV = 2, L = 10
+commence a verifier
+
+103 reserver H H 206j_08h01m 207j_18h01m
+verifier disponibilite H 206j_08h01m 207j_18h01m: V = 2, L = 7
+5j_01h00mV = 1, L = 8
+9j_20h00mV = 0, L = 9
+72j_17h00mV = 1, L = 8
+77j_06h00mV = 2, L = 7
+129j_22h00mV = 1, L = 8
+138j_00h01mV = 2, L = 7
+140j_23h01mV = 3, L = 6
+164j_03h01mV = 2, L = 7
+165j_12h01mV = 3, L = 6
+178j_15h01mV = 4, L = 5
+193j_11h01mV = 3, L = 6
+196j_11h01mV = 2, L = 7
+198j_09h01mV = 3, L = 6
+204j_18h01mV = 4, L = 5
+commence a verifier
+verifier retour H 207j_18h01m: V = 2, L = 7
+5j_01h00mV = 1, L = 8
+9j_20h00mV = 0, L = 9
+72j_17h00mV = 1, L = 8
+77j_06h00mV = 2, L = 7
+129j_22h00mV = 1, L = 8
+138j_00h01mV = 2, L = 7
+140j_23h01mV = 3, L = 6
+164j_03h01mV = 2, L = 7
+165j_12h01mV = 3, L = 6
+178j_15h01mV = 4, L = 5
+193j_11h01mV = 3, L = 6
+196j_11h01mV = 2, L = 7
+198j_09h01mV = 3, L = 6
+204j_18h01mV = 4, L = 5
+commence a verifier
+
+104 reserver J E 209j_08h01m 210j_15h01m
+verifier disponibilite J 209j_08h01m 210j_15h01m: V = 4, L = 1
+1j_13h00mV = 3, L = 2
+8j_18h00mV = 4, L = 1
+24j_08h00mV = 3, L = 2
+31j_15h00mV = 4, L = 1
+69j_03h00mV = 5, L = 0
+81j_16h00mV = 4, L = 1
+104j_04h00mV = 3, L = 2
+105j_19h00mV = 2, L = 3
+107j_04h00mV = 3, L = 2
+118j_00h00mV = 2, L = 3
+151j_07h01mV = 1, L = 4
+152j_00h01mV = 2, L = 3
+158j_06h01mV = 3, L = 2
+159j_00h01mV = 2, L = 3
+166j_17h01mV = 1, L = 4
+168j_15h01mV = 0, L = 5
+191j_22h01mV = 1, L = 4
+commence a verifier
+verifier retour E 210j_15h01m: V = 6, L = 6
+12j_15h00mV = 7, L = 5
+14j_07h00mV = 6, L = 6
+21j_20h00mV = 5, L = 7
+41j_16h00mV = 4, L = 8
+45j_19h00mV = 5, L = 7
+84j_00h00mV = 4, L = 8
+102j_04h00mV = 3, L = 9
+103j_12h00mV = 4, L = 8
+110j_12h00mV = 3, L = 9
+131j_04h00mV = 4, L = 8
+139j_10h01mV = 3, L = 9
+147j_01h01mV = 2, L = 10
+201j_04h01mV = 1, L = 11
+201j_22h01mV = 2, L = 10
+206j_04h01mV = 3, L = 9
+commence a verifier
+
+105 reserver D C 211j_15h01m 213j_07h01m
+verifier disponibilite D 211j_15h01m 213j_07h01m: V = 6, L = 5
+4j_08h00mV = 7, L = 4
+7j_12h00mV = 6, L = 5
+11j_13h00mV = 5, L = 6
+18j_21h00mV = 4, L = 7
+26j_17h00mV = 3, L = 8
+28j_11h00mV = 4, L = 7
+53j_17h00mV = 5, L = 6
+54j_09h00mV = 4, L = 7
+72j_21h00mV = 3, L = 8
+77j_07h00mV = 2, L = 9
+78j_03h00mV = 3, L = 8
+83j_08h00mV = 4, L = 7
+85j_22h00mV = 3, L = 8
+87j_13h00mV = 4, L = 7
+100j_06h00mV = 3, L = 8
+112j_09h00mV = 2, L = 9
+167j_15h01mV = 3, L = 8
+183j_09h01mV = 2, L = 9
+commence a verifier
+verifier retour C 213j_07h01m: V = 3, L = 4
+2j_15h00mV = 3, L = 4
+11j_09h00mV = 4, L = 3
+23j_07h00mV = 3, L = 4
+37j_19h00mV = 4, L = 3
+41j_02h00mV = 5, L = 2
+48j_07h00mV = 6, L = 1
+91j_10h00mV = 5, L = 2
+93j_03h00mV = 6, L = 1
+109j_17h00mV = 7, L = 0
+171j_22h01mV = 6, L = 1
+182j_07h01mV = 7, L = 0
+commence a verifier
+
+106 reserver C E 213j_21h01m 214j_19h01m
+verifier disponibilite C 213j_21h01m 214j_19h01m: V = 3, L = 4
+2j_15h00mV = 3, L = 4
+11j_09h00mV = 4, L = 3
+23j_07h00mV = 3, L = 4
+37j_19h00mV = 4, L = 3
+41j_02h00mV = 5, L = 2
+48j_07h00mV = 6, L = 1
+91j_10h00mV = 5, L = 2
+93j_03h00mV = 6, L = 1
+109j_17h00mV = 7, L = 0
+171j_22h01mV = 6, L = 1
+182j_07h01mV = 7, L = 0
+commence a verifier
+verifier retour E 214j_19h01m: V = 6, L = 6
+12j_15h00mV = 7, L = 5
+14j_07h00mV = 6, L = 6
+21j_20h00mV = 5, L = 7
+41j_16h00mV = 4, L = 8
+45j_19h00mV = 5, L = 7
+84j_00h00mV = 4, L = 8
+102j_04h00mV = 3, L = 9
+103j_12h00mV = 4, L = 8
+110j_12h00mV = 3, L = 9
+131j_04h00mV = 4, L = 8
+139j_10h01mV = 3, L = 9
+147j_01h01mV = 2, L = 10
+201j_04h01mV = 1, L = 11
+201j_22h01mV = 2, L = 10
+206j_04h01mV = 3, L = 9
+210j_15h01mV = 4, L = 8
+commence a verifier
+
+107 reserver E E 216j_09h01m 217j_21h01m
+verifier disponibilite E 216j_09h01m 217j_21h01m: V = 6, L = 6
+12j_15h00mV = 7, L = 5
+14j_07h00mV = 6, L = 6
+21j_20h00mV = 5, L = 7
+41j_16h00mV = 4, L = 8
+45j_19h00mV = 5, L = 7
+84j_00h00mV = 4, L = 8
+102j_04h00mV = 3, L = 9
+103j_12h00mV = 4, L = 8
+110j_12h00mV = 3, L = 9
+131j_04h00mV = 4, L = 8
+139j_10h01mV = 3, L = 9
+147j_01h01mV = 2, L = 10
+201j_04h01mV = 1, L = 11
+201j_22h01mV = 2, L = 10
+206j_04h01mV = 3, L = 9
+210j_15h01mV = 4, L = 8
+214j_19h01mV = 5, L = 7
+commence a verifier
+verifier retour E 217j_21h01m: V = 6, L = 6
+12j_15h00mV = 7, L = 5
+14j_07h00mV = 6, L = 6
+21j_20h00mV = 5, L = 7
+41j_16h00mV = 4, L = 8
+45j_19h00mV = 5, L = 7
+84j_00h00mV = 4, L = 8
+102j_04h00mV = 3, L = 9
+103j_12h00mV = 4, L = 8
+110j_12h00mV = 3, L = 9
+131j_04h00mV = 4, L = 8
+139j_10h01mV = 3, L = 9
+147j_01h01mV = 2, L = 10
+201j_04h01mV = 1, L = 11
+201j_22h01mV = 2, L = 10
+206j_04h01mV = 3, L = 9
+210j_15h01mV = 4, L = 8
+214j_19h01mV = 5, L = 7
+commence a verifier
+
+108 reserver B G 217j_23h01m 219j_18h01m
+verifier disponibilite B 217j_23h01m 219j_18h01m: V = 2, L = 8
+6j_02h00mV = 3, L = 7
+15j_06h00mV = 4, L = 6
+25j_07h00mV = 5, L = 5
+35j_09h00mV = 4, L = 6
+52j_13h00mV = 3, L = 7
+59j_02h00mV = 2, L = 8
+79j_08h00mV = 1, L = 9
+80j_10h00mV = 2, L = 8
+85j_16h00mV = 3, L = 7
+89j_23h00mV = 2, L = 8
+101j_07h00mV = 3, L = 7
+123j_23h00mV = 2, L = 8
+128j_04h00mV = 3, L = 7
+146j_14h01mV = 4, L = 6
+162j_21h01mV = 5, L = 5
+173j_17h01mV = 4, L = 6
+175j_17h01mV = 5, L = 5
+195j_05h01mV = 6, L = 4
+commence a verifier
+verifier retour G 219j_18h01m: V = 6, L = 4
+45j_02h00mV = 5, L = 5
+49j_04h00mV = 6, L = 4
+55j_12h00mV = 7, L = 3
+67j_15h00mV = 6, L = 4
+97j_15h00mV = 5, L = 5
+99j_15h00mV = 6, L = 4
+105j_15h00mV = 7, L = 3
+121j_07h00mV = 6, L = 4
+122j_12h00mV = 7, L = 3
+160j_13h01mV = 8, L = 2
+170j_03h01mV = 9, L = 1
+177j_14h01mV = 8, L = 2
+180j_14h01mV = 7, L = 3
+188j_05h01mV = 8, L = 2
+190j_11h01mV = 7, L = 3
+203j_02h01mV = 6, L = 4
+commence a verifier
+
+109 reserver F D 220j_21h01m 222j_16h01m
+verifier disponibilite F 220j_21h01m 222j_16h01m: V = 5, L = 6
+30j_00h00mV = 4, L = 7
+36j_18h00mV = 5, L = 6
+42j_20h00mV = 6, L = 5
+70j_16h00mV = 7, L = 4
+93j_21h00mV = 6, L = 5
+95j_20h00mV = 7, L = 4
+119j_10h00mV = 8, L = 3
+136j_02h01mV = 7, L = 4
+141j_08h01mV = 6, L = 5
+142j_22h01mV = 7, L = 4
+147j_21h01mV = 8, L = 3
+156j_16h01mV = 7, L = 4
+199j_14h01mV = 6, L = 5
+200j_17h01mV = 7, L = 4
+commence a verifier
+verifier retour D 222j_16h01m: V = 6, L = 5
+4j_08h00mV = 7, L = 4
+7j_12h00mV = 6, L = 5
+11j_13h00mV = 5, L = 6
+18j_21h00mV = 4, L = 7
+26j_17h00mV = 3, L = 8
+28j_11h00mV = 4, L = 7
+53j_17h00mV = 5, L = 6
+54j_09h00mV = 4, L = 7
+72j_21h00mV = 3, L = 8
+77j_07h00mV = 2, L = 9
+78j_03h00mV = 3, L = 8
+83j_08h00mV = 4, L = 7
+85j_22h00mV = 3, L = 8
+87j_13h00mV = 4, L = 7
+100j_06h00mV = 3, L = 8
+112j_09h00mV = 2, L = 9
+167j_15h01mV = 3, L = 8
+183j_09h01mV = 2, L = 9
+commence a verifier
+
+110 reserver A E 222j_19h01m 224j_05h01m
+verifier disponibilite A 222j_19h01m 224j_05h01m: V = 5, L = 3
+16j_02h00mV = 4, L = 4
+17j_07h00mV = 5, L = 3
+20j_18h00mV = 6, L = 2
+24j_00h00mV = 7, L = 1
+31j_17h00mV = 6, L = 2
+33j_09h00mV = 7, L = 1
+50j_19h00mV = 6, L = 2
+51j_19h00mV = 7, L = 1
+59j_19h00mV = 8, L = 0
+70j_04h00mV = 7, L = 1
+71j_05h00mV = 6, L = 2
+74j_03h00mV = 7, L = 1
+75j_06h00mV = 6, L = 2
+91j_02h00mV = 7, L = 1
+125j_16h00mV = 8, L = 0
+161j_05h01mV = 7, L = 1
+172j_16h01mV = 8, L = 0
+commence a verifier
+verifier retour E 224j_05h01m: V = 6, L = 6
+12j_15h00mV = 7, L = 5
+14j_07h00mV = 6, L = 6
+21j_20h00mV = 5, L = 7
+41j_16h00mV = 4, L = 8
+45j_19h00mV = 5, L = 7
+84j_00h00mV = 4, L = 8
+102j_04h00mV = 3, L = 9
+103j_12h00mV = 4, L = 8
+110j_12h00mV = 3, L = 9
+131j_04h00mV = 4, L = 8
+139j_10h01mV = 3, L = 9
+147j_01h01mV = 2, L = 10
+201j_04h01mV = 1, L = 11
+201j_22h01mV = 2, L = 10
+206j_04h01mV = 3, L = 9
+210j_15h01mV = 4, L = 8
+214j_19h01mV = 5, L = 7
+216j_09h01mV = 4, L = 8
+217j_21h01mV = 5, L = 7
+commence a verifier
