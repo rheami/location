@@ -34,12 +34,14 @@ void test2() {
     map2["Nouvelle-Ecosse"] = 55284;
     map2["Nouveau-Brunswick"] = 72908;
     map2["Ile-du-Prince-Edouard"] = 5660;
-    map2["Quebec"] = 1542056;
+    map2["Quebec"] = 15420526;
     map2["Ontario"] = 1076395;
-    map2["Manitoba"] = 647797;
+//    map2["Manitoba"] = 647797;
     map2["Saskatchewan"] = 651036;
     map2["Alberta"] = 661848;
+    map2["Quebec"] = 1542056;
     map2["Colombie-Britanique"] = 944735;
+    map2["Manitoba"] = 647797;
 
     std::cout << "map2[\"Quebec\"]=" << map2["Quebec"];
     if (map2["Quebec"] == 1542056)
@@ -50,7 +52,7 @@ void test2() {
     std::cout << "################################\n\n";
 }
 
-/*
+
 void test3()
 {
     std::cout << "ArbreMap / Test #3\n";
@@ -108,11 +110,11 @@ void test4()
   
     std::cout << "################################\n\n";
 }
-*/
+
 int main(int argc, const char **argv) {
     test1();
     test2();
-    //test3();
-    //test4();
+    test3();
+    test4();
     return 0;
 }

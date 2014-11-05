@@ -194,7 +194,7 @@ void ArbreAVL<T>::enlever(const T &element) {
 }
 
 template<class T>
-bool ArbreAVL<T>::enlever(const T &element, Noeud *&noeud) {
+bool ArbreAVL<T>::enlever(const T &element, Noeud *&noeud) { // todo a debugger
     if (element < noeud->contenu) {  // chercher a gauche
         if (enlever(element, noeud->gauche)) {
             noeud->equilibre--;
@@ -362,7 +362,7 @@ template<class T>
 const T &ArbreAVL<T>::max(Noeud *n) const {
     Iterateur iter(*this);
 
-    iter.courant = racine;iter;
+    iter.courant = racine;
     if (iter.courant != NULL)
         while (iter.courant->droite!= NULL){
             iter.courant = iter.courant->droite;
@@ -375,7 +375,7 @@ template<class T>
 typename ArbreAVL<T>::Iterateur ArbreAVL<T>::debut() const {
     Iterateur iter(*this);
 
-    iter.courant = racine;iter;
+    iter.courant = racine;
     if (iter.courant != NULL)
         while (iter.courant->gauche!= NULL){
             iter.chemin.empiler(iter.courant);
