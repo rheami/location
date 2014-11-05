@@ -3,6 +3,7 @@
 #include <string>
 #include <map>
 #include "date.h"
+#include "arbremap.h"
 
 using namespace std;
 
@@ -41,6 +42,7 @@ private:
 
      */
     //ArbreMap<Date, int> evenements; // todo utiliser arbremap
+    //Mapwrap<Date, int> evenements;
     map<Date, int> evenements;
 
     friend istream& operator >> (istream& is, Succursale&);
