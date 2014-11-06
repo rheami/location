@@ -15,7 +15,7 @@ bool Succursale::verifierDisponibiliteEtRetour(Date prise, Date retour){
     bool dispo=true;
     int nbVoit = nbVoitures;
     int nbLibre;
-    clog << "verifier disponibilite " << nomSuccursale << " " << prise << " " << retour << ": V = " << nbVoit << ", L = " << nbPlacesLibres << endl;
+    //cerr << "verifier disponibilite " << nomSuccursale << " " << prise << " " << retour << ": V = " << nbVoit << ", L = " << nbPlacesLibres << endl;
 
     if (evenements.empty())
         return nbVoitures > 0;
@@ -27,44 +27,44 @@ bool Succursale::verifierDisponibiliteEtRetour(Date prise, Date retour){
     map<Date,int>::iterator it = evenements.begin();
     for (; it->first <= prise && it != evenements.end(); ++it) {
         nbVoit += it->second;
-        clog << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << endl;
+      //  cerr << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << endl;
         //assert(nbVoit >= 0);
     }
 
     // continue a calculer jusqua retour et verifie la disponibilite ( dispo = nbVoit > 0)
-    clog << "commence a verifier disponibilite" << endl;
+    //cerr << "commence a verifier disponibilite" << endl;
     if (it == evenements.end()){
         dispo = nbVoit > 0;
     } else { // verifie jusqua retour arrete si dispo faux ou rendu a la fin
         dispo = nbVoit > 0;
         for (;dispo && it->first < retour && it != evenements.end();++it){
             nbVoit += it->second;
-            clog << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << endl;
+           // cerr << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << endl;
             dispo = nbVoit > 0;
         }
     }
 
     if (dispo) {
-        if (dispo) clog << "ok" << endl;
+        //if (dispo) cerr << "ok" << endl;
 
         nbLibre = (nbPlaces - nbVoit) + 1; // la prise de possesion libère une place
         
         // la place doit etre disponible a partir de retour jusqua la fin des evenements actuels
 
         // continue a calculer jusqua fin et verifie si place libres
-        clog << "commence a verifier retour" << endl;
+        //cerr << "commence a verifier retour" << endl;
         if (it == evenements.end()) {
             dispo = nbLibre > 0;
         } else { // verifie jusqua la fin, arrete si dispo faux
             dispo = nbLibre > 0;
             for (;dispo && it != evenements.end();++it){
                 nbLibre -= it->second;
-                clog << it->first << "V = " << nbPlaces - nbLibre << ", L = " <<  nbLibre << endl;
+                //cerr << it->first << "V = " << nbPlaces - nbLibre << ", L = " <<  nbLibre << endl;
                 dispo = nbLibre > 0;
             }
         }
     }
-    if (dispo) clog << "ok" << endl;
+   // if (dispo) cerr << "ok" << endl;
 
     return dispo;
 }
@@ -72,7 +72,7 @@ bool Succursale::verifierDisponibiliteEtRetour(Date prise, Date retour){
 bool Succursale::verifierDisponibilite(Date prise, Date retour){
     bool dispo=true;
     int nbVoit = nbVoitures;
-    clog << "verifier disponibilite " << nomSuccursale << " " << prise << " " << retour << ": V = " << nbVoit << ", L = " << nbPlacesLibres << endl;
+   // cerr << "verifier disponibilite " << nomSuccursale << " " << prise << " " << retour << ": V = " << nbVoit << ", L = " << nbPlacesLibres << endl;
 
     if (evenements.empty())
         return nbVoitures > 0;
@@ -82,24 +82,24 @@ bool Succursale::verifierDisponibilite(Date prise, Date retour){
     map<Date,int>::iterator it = evenements.begin();
     for (; it->first <= prise && it != evenements.end(); ++it) {
         nbVoit += it->second;
-        clog << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << endl;
-        //assert(nbVoit >= 0);
+    //    cerr << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << endl;
+        assert(nbVoit >= 0);
     }
 
     // continue a calculer jusqua fin et verifie la disponibilite ( dispo = nbVoit > 0)
-    clog << "commence a verifier disponibilite" << endl;
+    //cerr << "commence a verifier disponibilite" << endl;
     if (it == evenements.end()){
         dispo = nbVoit > 0;
     } else { // verifie jusqua retour arrete si dispo faux ou rendu a la fin
         dispo = nbVoit > 0;
         for (;dispo && it != evenements.end();++it){
             nbVoit += it->second;
-            clog << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << endl;
+            cerr << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << endl;
             dispo = nbVoit > 0;
         }
     }
 
-    if (dispo) clog << "ok" << endl;
+   // if (dispo) cerr << "ok" << endl;
     return dispo;
 }
 
@@ -107,7 +107,7 @@ bool Succursale::verifierDisponibilite(Date prise, Date retour){
 bool Succursale::verifierRetourPossible(Date retour){
     bool retourOk = true;
     int nbLibre = nbPlacesLibres;
-    clog << "verifier retour " << nomSuccursale << " " << retour << ": V = " << nbVoitures << ", L = " << nbLibre << endl;
+    //cerr << "verifier retour " << nomSuccursale << " " << retour << ": V = " << nbVoitures << ", L = " << nbLibre << endl;
 
     if (evenements.empty())
         return  nbPlacesLibres > 0;
@@ -116,24 +116,24 @@ bool Succursale::verifierRetourPossible(Date retour){
     // la place doit etre disponible a partir de retour jusqua la fin des evenements actuels  !!
     for (; it->first <= retour && it != evenements.end(); ++it) {
         nbLibre -= it->second;
-        clog << it->first << "V = " << nbPlaces - nbLibre << ", L = " << nbLibre << endl;
+       // cerr << it->first << "V = " << nbPlaces - nbLibre << ", L = " << nbLibre << endl;
         assert(nbLibre >= 0);
     }
 
     // commence a verifier ici
-    clog << "commence a verifier" << endl;
+    //cerr << "commence a verifier" << endl;
     if (it == evenements.end()) {
         retourOk = nbLibre > 0;
     } else { // verifie jusqua la fin, arrete si dispo faux
         retourOk = nbLibre > 0;
         for (;retourOk && it != evenements.end();++it){
             nbLibre -= it->second;
-            clog << it->first << "V = " << nbPlaces - nbLibre << ", L = " <<  nbLibre << endl;
+          //  cerr << it->first << "V = " << nbPlaces - nbLibre << ", L = " <<  nbLibre << endl;
             retourOk = nbLibre > 0;
         }
     }
 
-    if (retourOk) clog << "ok" << endl;
+   // if (retourOk) cerr << "ok" << endl;
 
     return retourOk;
 }

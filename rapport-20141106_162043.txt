@@ -1,0 +1,5 @@
+#Rapport de correction
+#Date: 20141106_162043
+#																																																																																		
+#Soumission	Taille sources	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem
+.	 1820  5817 49599 total	OK	0.00	2684k	OK	0.00	2620k	OK	0.00	2624k	OK	0.00	2628k	OK	0.00	2744k	OK	0.00	2688k	OK	0.00	2676k	OK	0.00	2616k	OK	0.00	2832k	OK	0.00	2660k	OK	0.00	2756k	OK	0.00	2680k	OK	0.00	2672k	OK	0.00	2912k	OK	0.01	2972k	OK	0.18	3524k	OK	4.13	3528k	OK	3.15	5496k	Echec	472j_14h45mV = 516.56	4504k	Echec	9.99	7128k	Echec	472j_01h00m12.72	4280k	Echec	10.19	7224k	Echec	472j_10h45mV = 15.34	4144k	Echec	12.15	7676k	Echec	730j_06h30m14.76	4860k	Echec	3.51	11924k	Echec	1200j_16h00m18.52	10364k

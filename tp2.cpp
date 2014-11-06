@@ -15,17 +15,12 @@
 using namespace std;
 
 int tp2(istream& entree){
-    std::streambuf *psbuf;
-    std::ofstream filestr;
-    filestr.open ("logfile");
-    psbuf = filestr.rdbuf();
-    clog.rdbuf(psbuf);
-    clog << "tp2" << endl;
-    //ArbreMap<std::string, Succursale> succursales; // todo utiliser arbremap
-    map<string, Succursale> succursales;
+    cerr << "tp2" << endl;
+    ArbreMap<std::string, Succursale> succursales; // todo utiliser arbremap
+    //map<string, Succursale> succursales;
     
     int id=1;
-    while(entree){
+    while(entree){ // todo enlever && id < 1000200
         Succursale succursale;
         std::string commande;
         entree >> commande >> ws;
@@ -36,12 +31,11 @@ int tp2(istream& entree){
             entree >> succursale;
             succursales[succursale.getName()] = succursale;
             cout << "Creee" << endl;
-            clog << id << " : " << "Creee" << succursale << endl;
         }else if(commande=="reserver"){
             string origine, destination;
             Date debut, fin;
             entree >> origine >> destination >> debut >> fin;
-            clog << endl << id << " " << commande << " " << origine <<  " " << destination << " " << debut << " " << fin << endl;
+            //cerr << endl << id << " " << commande << " " << origine <<  " " << destination << " " << debut << " " << fin << endl;
             bool ok = false;
             if (fin < debut) {
                 cout << "Commande '" << commande << " " << debut << " " << fin << "' invalide!" << endl;
@@ -50,6 +44,7 @@ int tp2(istream& entree){
             Succursale &succursaleO = succursales[origine];
             Succursale &succursaleF = succursales[destination];
             //todo tester si elles existent
+
             if (succursaleO==succursaleF) {
                 if (succursaleO.verifierDisponibiliteEtRetour(debut, fin)) {
                     succursaleO.ajouterEvenementDepart(debut);
@@ -73,7 +68,6 @@ int tp2(istream& entree){
             return 2;
         }
 
-        // todo deplacer
         char pointvigule=0;
         entree >> pointvigule >> ws;
         if(pointvigule!=';'){
@@ -82,7 +76,6 @@ int tp2(istream& entree){
         }
         id++;
     }
-    filestr.close();
     return 0;
 }
 // syntaxe d'appel : ./tp2 [nomfichier.txt]
