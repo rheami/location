@@ -20,7 +20,7 @@ int tp2(istream& entree){
     filestr.open ("logfile");
     psbuf = filestr.rdbuf();
     clog.rdbuf(psbuf);
-    clog << "allo" << endl;
+    clog << "tp2" << endl;
     //ArbreMap<std::string, Succursale> succursales; // todo utiliser arbremap
     map<string, Succursale> succursales;
     
@@ -36,6 +36,7 @@ int tp2(istream& entree){
             entree >> succursale;
             succursales[succursale.getName()] = succursale;
             cout << "Creee" << endl;
+            clog << id << " : " << "Creee" << succursale << endl;
         }else if(commande=="reserver"){
             string origine, destination;
             Date debut, fin;
@@ -57,7 +58,7 @@ int tp2(istream& entree){
                 }
             } else {
                 if (succursaleO.verifierDisponibilite(debut, fin) &&
-                        succursaleF.verifierRetourPossible(debut)) {
+                        succursaleF.verifierRetourPossible(fin)) {
                     succursaleO.ajouterEvenementDepart(debut);
                     succursaleF.ajouterEvenementRetour(fin);
                     ok = true;
