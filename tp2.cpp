@@ -15,17 +15,12 @@
 using namespace std;
 
 int tp2(istream& entree){
-    std::streambuf *psbuf;
-    std::ofstream filestr;
-    filestr.open ("logfile");
-    psbuf = filestr.rdbuf();
-    clog.rdbuf(psbuf);
-
-    //ArbreMap<std::string, Succursale> succursales; // todo utiliser arbremap
-    map<string, Succursale> succursales;
+    cerr << "tp2" << endl;
+    ArbreMap<std::string, Succursale> succursales; // todo utiliser arbremap
+    //map<string, Succursale> succursales;
     
     int id=1;
-    while(entree){
+    while(entree){ // todo enlever && id < 1000200
         Succursale succursale;
         std::string commande;
         entree >> commande >> ws;
@@ -40,7 +35,7 @@ int tp2(istream& entree){
             string origine, destination;
             Date debut, fin;
             entree >> origine >> destination >> debut >> fin;
-            clog << commande << " " << origine << destination << debut << fin << endl;
+            //cerr << endl << id << " " << commande << " " << origine <<  " " << destination << " " << debut << " " << fin << endl;
             bool ok = false;
             if (fin < debut) {
                 cout << "Commande '" << commande << " " << debut << " " << fin << "' invalide!" << endl;
@@ -50,20 +45,29 @@ int tp2(istream& entree){
             Succursale &succursaleF = succursales[destination];
             //todo tester si elles existent
 
-            if (succursaleO.verifierDisponibilite(debut, fin) &&
-                succursaleF.verifierRetourPossible(fin)) {
-                succursaleO.ajouterEvenementDepart(debut);
-                succursaleF.ajouterEvenementRetour(fin);
-                ok = true;
+            if (succursaleO==succursaleF) {
+                if (succursaleO.verifierDisponibiliteEtRetour(debut, fin)) {
+                    succursaleO.ajouterEvenementDepart(debut);
+                    succursaleF.ajouterEvenementRetour(fin);
+                    ok = true;
+                }
+            } else {
+                if (succursaleO.verifierDisponibilite(debut, fin) &&
+                        succursaleF.verifierRetourPossible(fin)) {
+                    succursaleO.ajouterEvenementDepart(debut);
+                    succursaleF.ajouterEvenementRetour(fin);
+                    ok = true;
+                }
             }
-            
+
+
+
             cout << (ok ? "Acceptee" : "NonDispo") << endl;
         }else{
             cout << "Commande '" << commande << "' invalide!" << endl;
             return 2;
         }
 
-        // todo deplacer
         char pointvigule=0;
         entree >> pointvigule >> ws;
         if(pointvigule!=';'){
@@ -72,7 +76,6 @@ int tp2(istream& entree){
         }
         id++;
     }
-    filestr.close();
     return 0;
 }
 // syntaxe d'appel : ./tp2 [nomfichier.txt]

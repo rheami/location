@@ -1,5 +1,7 @@
 *~
 .idea/
 *.o
+*.out
 tp2
 CMakeLists.txt
+*.resultat

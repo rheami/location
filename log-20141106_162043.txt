@@ -1,0 +1,46 @@
+#Machine :  localhost.localdomain .
+#Date début : 20141106_162043.
+#Limite de 60 secondes par test.
+Taille des fichiers source :
+   51   165  1165 date.cpp
+  156   869  5706 succ.cpp
+  445  1360 12455 test_arbreavl.cpp
+  120   336  2866 test_arbremap.cpp
+   41   195  1569 testdate.cpp
+   98   333  3135 tp2.cpp
+  556  1608 14535 arbreavl.h
+  112   297  2869 arbremap.h
+   30    74   603 date.h
+   14    38   301 mapwrapper.h
+  141   376  2931 pile.h
+   56   166  1464 succ.h
+ 1820  5817 49599 total
+#
+Test    	Taille	Opt?	CPU	Mém.(k)
+testC-00.txt	15	OK	0.00	2684k
+testC+00.txt	15	OK	0.00	2620k
+testC-01.txt	126	OK	0.00	2624k
+testC+01.txt	110	OK	0.00	2628k
+testC-02.txt	1026	OK	0.00	2744k
+testC+02.txt	1026	OK	0.00	2688k
+testC+03.txt	2026	OK	0.00	2676k
+testD-00.txt	15	OK	0.00	2616k
+testD+00.txt	15	OK	0.00	2832k
+testD-01.txt	110	OK	0.00	2660k
+testD+01.txt	110	OK	0.00	2756k
+testD-02.txt	1026	OK	0.00	2680k
+testD+02.txt	1026	OK	0.00	2672k
+testD+03.txt	1100	OK	0.00	2912k
+testD+04.txt	3000	OK	0.01	2972k
+testG-00.txt	10010	OK	0.18	3524k
+testG+00.txt	10010	OK	4.13	3528k
+testG-01.txt	50010	OK	3.15	5496k
+testG+01.txt	50010	Echec	472j_14h45mV = 516.56	4504k
+testG-02.txt	100010	Echec	9.99	7128k
+testG+02.txt	100010	Echec	472j_01h00m12.72	4280k
+testG-03.txt	500010	Echec	10.19	7224k
+testG+03.txt	500010	Echec	472j_10h45mV = 15.34	4144k
+testG-04.txt	1000010	Echec	12.15	7676k
+testG+04.txt	1000010	Echec	730j_06h30m14.76	4860k
+testG-05.txt	1000100	Echec	3.51	11924k
+testG+05.txt	1000100	Echec	1200j_16h00m18.52	10364k

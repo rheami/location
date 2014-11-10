@@ -1,5 +1,0 @@
-#Rapport de correction
-#Date: 20141104_010817
-#																																														
-#Soumission	Taille sources	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem	Opt?	CPU	Mem
-.	 1691  5059 44294 total	OK	0.00	2608k	OK	0.00	2624k	OK	0.00	2720k	Echec	0.00	2620k	OK	0.00	2748k	Echec	0.00	2656k	Echec	0.00	2692k	Echec	0.00	2644k	Echec	0.00	2680k	Echec	0.00	2620k	Echec	0.00	2612k	Echec	0.00	2732k	Echec	0.00	2708k	Echec	0.00	2656k	Echec	0.00	2800k

@@ -3,6 +3,7 @@
 #include <string>
 #include <map>
 #include "date.h"
+#include "arbremap.h"
 
 using namespace std;
 
@@ -19,9 +20,11 @@ class Succursale{
 
     bool verifierDisponibilite(Date, Date);
     bool verifierRetourPossible(Date);
+    bool verifierDisponibiliteEtRetour(Date, Date);
     void ajouterEvenementDepart(Date);
     void ajouterEvenementRetour(Date);
 
+    bool operator==(const Succursale &) const;
     string getName() const;
 
     ~Succursale() {
@@ -41,6 +44,7 @@ private:
 
      */
     //ArbreMap<Date, int> evenements; // todo utiliser arbremap
+    //Mapwrap<Date, int> evenements;
     map<Date, int> evenements;
 
     friend istream& operator >> (istream& is, Succursale&);
