@@ -272,8 +272,8 @@ void ArbreAVL<T>::rotationDroite(Noeud *&racine) {
     //std::cout << "rotation droite de " << racine->contenu << " avec " << racine->gauche->contenu << std::endl;
     int new_er = -(eg > 0 ? eg : 0) - 1 + er;
     int new_eg = eg + (new_er < 0 ? new_er : 0) - 1;
-   // assert(new_er > -1 && new_er < 1);
-   // assert(new_eg > -1 && new_eg < 1);
+    assert(new_er > -1 && new_er < 1);
+    assert(new_eg > -1 && new_eg < 1);
 
     temp->equilibre = new_eg;
     racine->equilibre = new_er;
@@ -293,8 +293,8 @@ void ArbreAVL<T>::rotationGauche(Noeud *&racine) {
 
     int new_er = er - (ed > 0 ? 0 : ed) + 1;
     int new_ed = ed + (new_er < 0 ? 0 : new_er) + 1;
-//    assert(new_er > -1 && new_er < 1);
-//    assert(new_ed > -1 && new_ed < 1);
+    assert(new_er > -1 && new_er < 1);
+    assert(new_ed > -1 && new_ed < 1);
 
     temp->equilibre = new_ed;
     racine->equilibre = new_er;
