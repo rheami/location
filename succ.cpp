@@ -94,7 +94,7 @@ bool Succursale::verifierDisponibilite(Date prise, Date retour){
         dispo = nbVoit > 0;
         for (;dispo && it != evenements.end();++it){
             nbVoit += it->second;
-            cerr << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << endl;
+            //cerr << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << endl;
             dispo = nbVoit > 0;
         }
     }

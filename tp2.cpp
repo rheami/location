@@ -15,7 +15,8 @@
 using namespace std;
 
 int tp2(istream& entree){
-    cerr << "tp2" << endl;
+    
+//	<< "tp2" << endl;
     ArbreMap<std::string, Succursale> succursales; // todo utiliser arbremap
     //map<string, Succursale> succursales;
     
