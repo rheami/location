@@ -495,7 +495,7 @@ ArbreAVL<T>::Iterateur::Iterateur(const ArbreAVL &a)
 
 // Pré-incrément
 template<class T>
-typename ArbreAVL<T>::Iterateur &ArbreAVL<T>::Iterateur::operator++() {
+inline typename ArbreAVL<T>::Iterateur &ArbreAVL<T>::Iterateur::operator++() {
 
     assert(courant);
     Noeud* suivant = courant->droite;

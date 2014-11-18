@@ -22,10 +22,24 @@ class Succursale{
 	bool verifierDisponibilite(const Date, const  Date);
 	bool verifierRetourPossible(const Date);
 	bool verifierDisponibiliteEtRetour(const Date, const  Date);
-    void ajouterEvenementDepart(Date);
-    void ajouterEvenementRetour(Date);
+	inline void ajouterEvenementDepart(const Date date) {
+		if (derniereDate < date)
+			derniereDate = date;
+		nbVoitureDerniereDate -= 1;
+		evenements[date] -= 1;
+	}
+	inline void ajouterEvenementRetour(const Date date){
 
-    bool operator==(const Succursale &) const;
+		if (derniereDate < date)
+			derniereDate = date;
+		nbVoitureDerniereDate += 1;
+		evenements[date] += 1;
+	}
+	inline bool operator==(const Succursale & autre) const
+	{
+
+		return nomSuccursale.compare(autre.nomSuccursale) == 0;
+	}
     string getName() const;
 
     ~Succursale() {

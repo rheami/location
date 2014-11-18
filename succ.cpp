@@ -7,9 +7,6 @@ string Succursale::getName() const{
     return nomSuccursale;
 }
 
-bool Succursale::operator==(const Succursale &autre) const {
-    return nomSuccursale.compare(autre.getName()) == 0;
-}
 
 bool Succursale::verifierDisponibiliteEtRetour(const Date prise, const Date retour){
 	bool dispo = true;
@@ -189,19 +186,7 @@ bool Succursale::verifierRetourPossible(const Date retour){
     return retourOk;
 }
 
-void Succursale::ajouterEvenementDepart(Date date) {
-	if (derniereDate < date)
-		derniereDate = date;
-	nbVoitureDerniereDate -= 1;
-    evenements[date] -= 1;
-}
-void Succursale::ajouterEvenementRetour(Date date){
-    
-	if (derniereDate < date)
-		derniereDate = date;
-	nbVoitureDerniereDate += 1;
-	evenements[date] += 1;
-}
+
 
 istream& operator >> (istream& is, Succursale& succursale) {
     is >> succursale.nomSuccursale >> succursale.nbVoitures >> succursale.nbPlacesLibres;

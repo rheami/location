@@ -16,8 +16,13 @@ class Date{
   public:
     Date();
 	Date(int min);
-    bool operator <(const Date& date) const;
-    bool operator <=(const Date& date) const;
+	inline bool operator <(const Date& d) const{
+		return minutes < d.minutes;
+	}
+
+	inline bool operator <=(const Date& d) const{
+		return minutes <= d.minutes;
+	}
   
   private:
     int minutes;

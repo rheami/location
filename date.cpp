@@ -19,13 +19,6 @@ Date::Date(int min)
 {
 	minutes = min;
 }
-bool Date::operator <(const Date& d) const{
-    return minutes < d.minutes;
-}
-
-bool Date::operator <=(const Date& d) const{
-    return minutes <= d.minutes;
-}
 
 std::ostream& operator << (std::ostream& os, const Date& d){
     int jours, heures, minutes;
