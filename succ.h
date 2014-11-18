@@ -19,9 +19,9 @@ class Succursale{
         nbPlaces = nbVoitures + nbPlacesLibres;
     }
 
-    bool verifierDisponibilite(Date, Date);
-    bool verifierRetourPossible(Date);
-    bool verifierDisponibiliteEtRetour(Date, Date);
+	bool verifierDisponibilite(const Date, const  Date);
+	bool verifierRetourPossible(const Date);
+	bool verifierDisponibiliteEtRetour(const Date, const  Date);
     void ajouterEvenementDepart(Date);
     void ajouterEvenementRetour(Date);
 

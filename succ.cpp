@@ -45,16 +45,7 @@ bool Succursale::verifierDisponibiliteEtRetour(const Date prise, const Date reto
 
 		// continue a calculer jusqua retour et verifie la disponibilite ( dispo = nbVoit > 0)
 		//cerr << "commence a verifier disponibilite" << finl;
-		if (derniereDate < retour &&nbVoitureDerniereDate-1 < nbPlaces)
-		{
-			dispo = true;
-		}
-		else if (derniereDate < retour)
-		{
-			dispo = false;
-		}
-		else
-		{
+		
 			if (it == evenements.fin()){
 				dispo = nbVoit > 0;
 			}
@@ -66,7 +57,16 @@ bool Succursale::verifierDisponibiliteEtRetour(const Date prise, const Date reto
 					dispo = nbVoit > 0;
 				}
 			}
+			if (derniereDate < retour && (nbVoitureDerniereDate - 1) < nbPlaces)
+			{
 
+			}
+			else if (derniereDate < retour)
+			{
+				dispo = false;
+			}
+			else
+			{
 			if (dispo) {
 				//if (dispo) cerr << "ok" << finl;
 

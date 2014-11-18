@@ -48,15 +48,15 @@ public:
     public:
         Iterateur(ArbreMap &a): iter(a.entrees.debut()){}
         Iterateur(typename ArbreAVL<Entree>::Iterateur i): iter(i){}
-        operator bool() const {return iter.operator bool();};
-        Iterateur& operator++() {++iter; return *this;}
-        const K& cle() const {return ( *iter).cle;}
-        const V& valeur() {return (V&) ( *iter).valeur;}
+        inline operator bool() const {return iter.operator bool();};
+        inline Iterateur& operator++() {++iter; return *this;}
+        inline const K& cle() const {return ( *iter).cle;}
+        const inline V& valeur() {return (V&) ( *iter).valeur;}
     private:
         typename ArbreAVL<Entree>::Iterateur iter;
     };
-    Iterateur debut() { return Iterateur( *this); }
-    Iterateur fin() { return Iterateur(entrees.fin());}
+    inline Iterateur debut() { return Iterateur( *this); }
+	inline Iterateur fin() { return Iterateur(entrees.fin()); }
     Iterateur rechercher(const K& cle) { return Iterateur(entrees.rechercher(cle));}
     Iterateur rechercherEgalOuSuivant(const K& cle) {return
                 Iterateur(entrees.rechercherEgalOuSuivant(cle));}
