@@ -34,7 +34,8 @@ bool Succursale::verifierDisponibiliteEtRetour(const Date prise, const Date reto
 
 		//itere du debut a prise (calcule etat a prise)
 		ArbreMap<Date, int>::Iterateur it = evenements.debut();
-		for (; it != evenements.fin() && it.cle() <= prise; ++it) {
+		ArbreMap<Date, int>::Iterateur fin = evenements.fin();
+		for (; it != fin && it.cle() <= prise; ++it) {
 			nbVoit += it.valeur();
 			//  cerr << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << finl;
 			//assert(nbVoit >= 0);
@@ -43,12 +44,12 @@ bool Succursale::verifierDisponibiliteEtRetour(const Date prise, const Date reto
 		// continue a calculer jusqua retour et verifie la disponibilite ( dispo = nbVoit > 0)
 		//cerr << "commence a verifier disponibilite" << finl;
 		
-			if (it == evenements.fin()){
+			if (it == fin){
 				dispo = nbVoit > 0;
 			}
 			else { // verifie jusqua retour arrete si dispo faux ou rfinu a la fin
 				dispo = nbVoit > 0;
-				for (; dispo && it != evenements.fin() && it.cle() < retour; ++it){
+				for (; dispo && it != fin && it.cle() < retour; ++it){
 					nbVoit += it.valeur();
 					// cerr << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << finl;
 					dispo = nbVoit > 0;
@@ -73,12 +74,12 @@ bool Succursale::verifierDisponibiliteEtRetour(const Date prise, const Date reto
 
 				// continue a calculer jusqua fin et verifie si place libres
 				//cerr << "commence a verifier retour" << finl;
-				if (it == evenements.fin()) {
+				if (it == fin) {
 					dispo = nbLibre > 0;
 				}
 				else { // verifie jusqua la fin, arrete si dispo faux
 					dispo = nbLibre > 0;
-					for (; dispo && it != evenements.fin(); ++it){
+					for (; dispo && it != fin; ++it){
 						nbLibre -= it.valeur();
 						//cerr << it->first << "V = " << nbPlaces - nbLibre << ", L = " <<  nbLibre << finl;
 						dispo = nbLibre > 0;
@@ -114,7 +115,8 @@ bool Succursale::verifierDisponibilite(const Date prise,const Date retour){
 
 		//itere du debut a prise (calcule etat a prise)
 		ArbreMap<Date, int>::Iterateur it = evenements.debut();
-		for (; it != evenements.fin() && it.cle() <= prise; ++it) {
+		ArbreMap<Date, int>::Iterateur fin = evenements.fin();
+		for (; it != fin && it.cle() <= prise; ++it) {
 			nbVoit += it.valeur();
 			//    cerr << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << finl;
 			assert(nbVoit >= 0);
@@ -122,12 +124,12 @@ bool Succursale::verifierDisponibilite(const Date prise,const Date retour){
 
 		// continue a calculer jusqua fin et verifie la disponibilite ( dispo = nbVoit > 0)
 		//cerr << "commence a verifier disponibilite" << finl;
-		if (it == evenements.fin()){
+		if (it == fin){
 			dispo = nbVoit > 0;
 		}
 		else { // verifie jusqua retour arrete si dispo faux ou rfinu a la fin
 			dispo = nbVoit > 0;
-			for (; dispo && it != evenements.fin(); ++it){
+			for (; dispo && it != fin; ++it){
 				nbVoit += it.valeur();
 				//cerr << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << finl;
 				dispo = nbVoit > 0;
@@ -160,8 +162,9 @@ bool Succursale::verifierRetourPossible(const Date retour){
 			return  nbPlacesLibres > 0;
 
 		ArbreMap<Date, int>::Iterateur it = evenements.debut();
+		ArbreMap<Date, int>::Iterateur fin = evenements.fin();
 		// la place doit etre disponible a partir de retour jusqua la fin des evenements actuels  !!
-		for (; it != evenements.fin() && it.cle() <= retour; ++it) {
+		for (; it != fin && it.cle() <= retour; ++it) {
 			nbLibre -= it.valeur();
 			// cerr << it->first << "V = " << nbPlaces - nbLibre << ", L = " << nbLibre << finl;
 			assert(nbLibre >= 0);
@@ -169,12 +172,12 @@ bool Succursale::verifierRetourPossible(const Date retour){
 
 		// commence a verifier ici
 		//cerr << "commence a verifier" << finl;
-		if (it == evenements.fin()) {
+		if (it == fin) {
 			retourOk = nbLibre > 0;
 		}
 		else { // verifie jusqua la fin, arrete si dispo faux
 			retourOk = nbLibre > 0;
-			for (; retourOk && it != evenements.fin(); ++it){
+			for (; retourOk && it != fin; ++it){
 				nbLibre -= it.valeur();
 				//  cerr << it->first << "V = " << nbPlaces - nbLibre << ", L = " <<  nbLibre << finl;
 				retourOk = nbLibre > 0;

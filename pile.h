@@ -4,7 +4,7 @@
 
 #if !defined(__PILE_H__)
 #define __PILE_H__
-
+#include "tableau.h"
 template<class T>
 class Pile {
 public:
@@ -20,7 +20,7 @@ public:
     T depiler();
 
     bool vide() const {
-        return sommet == NULL;
+        return Table.taille() ==0;
     }
 
     void vider();
@@ -30,15 +30,7 @@ public:
 private:
     //Pile(const Pile&); // on pourrait préférer mettre le constructeur par copie privé.
 
-    class Cellule {
-    public:
-        Cellule(const T &e, Cellule *c);
-
-        T contenu;
-        Cellule *suivante;
-    };
-
-    Cellule *sommet;
+	Tableau<T> Table;
 };
 
 /*
@@ -59,7 +51,6 @@ private:
 
 template<class T>
 Pile<T>::Pile() {
-    sommet = NULL;
 }
 
 template<class T>
@@ -69,9 +60,7 @@ Pile<T>::~Pile() {
 
 template<class T>
 Pile<T>::Pile(const Pile<T> &autre) {
-    sommet = NULL;
-    // version paresseuse : il suffit d'appeler l'opéreateur =
-    *this = autre;
+	Table(autre.Table)
 }
 
 
@@ -81,57 +70,28 @@ void Pile<T>::vider() {
         depiler();
 }
 
-template<class T>
-Pile<T>::Cellule::Cellule(const T &e, Cellule *c)
-        : suivante(c) {
-    contenu = e;
-}
 
 template<class T>
 void Pile<T>::empiler(const T &e) {
-    sommet = new Cellule(e, sommet);
-    assert(sommet);
+	Table.ajouter(e);
 }
 
 template<class T>
 T Pile<T>::depiler() {
-    assert(sommet);
-    Cellule c(*sommet);
-    delete sommet;
-    sommet = c.suivante;
-    return c.contenu;
+	T Sortie = Table[Table.taille() - 1];
+	Table.enlever_dernier();
+		return Sortie;
 }
 
 template<class T>
 void Pile<T>::depiler(T &e) {
-    assert(sommet != NULL);
-    e = sommet->contenu;
-    Cellule *c = sommet;
-    sommet = sommet->suivante;
-    delete c;
+	e = Table[Table.taille() - 1];
+	Table.enlever_dernier();
 }
 
 template<class T>
 const Pile<T> &Pile<T>::operator=(const Pile<T> &autre) {
-    if (&autre == this) return *this;
-
-    Cellule **t = &sommet;
-    Cellule *a = autre.sommet;
-    while (a) {
-        if ((*t) == NULL)
-            *t = new Cellule(a->contenu, NULL);
-        else
-            (*t)->contenu = a->contenu;
-        t = &((*t)->suivante);
-        a = a->suivante;
-    }
-    a = *t;
-    *t = NULL;
-    while (a != NULL) {
-        Cellule *temp = a->suivante;
-        delete a;
-        a = temp;
-    }
+	this->Table = autre.Table;
 
     return *this;
 }
