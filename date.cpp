@@ -15,7 +15,10 @@
 Date::Date()
 {
 }
-
+Date::Date(int min)
+{
+	minutes = min;
+}
 bool Date::operator <(const Date& d) const{
     return minutes < d.minutes;
 }

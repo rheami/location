@@ -11,143 +11,202 @@ bool Succursale::operator==(const Succursale &autre) const {
     return nomSuccursale.compare(autre.getName()) == 0;
 }
 
-bool Succursale::verifierDisponibiliteEtRetour(Date prise, Date retour){
+bool Succursale::verifierDisponibiliteEtRetour(const Date prise, const Date retour){
+	bool dispo = true;
+	
+	if (derniereDate<prise && 1>nbVoitureDerniereDate)
+	{
+		dispo = false;
+
+	}
+	else if (derniereDate < prise && nbVoitureDerniereDate>1)
+	{
+
+	}
+	else
+	{
+		int nbVoit = nbVoitures;
+		int nbLibre;
+		//cerr << "verifier disponibilite " << nomSuccursale << " " << prise << " " << retour << ": V = " << nbVoit << ", L = " << nbPlacesLibres << finl;
+
+		if (evenements.vide())
+			return nbVoitures > 0;
+		// et au moins une place libre celle qu on vient de liberer;
+
+		// 1- la voiture doit etre disponible pour la duree
+
+		//itere du debut a prise (calcule etat a prise)
+		ArbreMap<Date, int>::Iterateur it = evenements.debut();
+		for (; it != evenements.fin() && it.cle() <= prise; ++it) {
+			nbVoit += it.valeur();
+			//  cerr << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << finl;
+			//assert(nbVoit >= 0);
+		}
+
+		// continue a calculer jusqua retour et verifie la disponibilite ( dispo = nbVoit > 0)
+		//cerr << "commence a verifier disponibilite" << finl;
+		if (derniereDate < retour &&nbVoitureDerniereDate-1 < nbPlaces)
+		{
+			dispo = true;
+		}
+		else if (derniereDate < retour)
+		{
+			dispo = false;
+		}
+		else
+		{
+			if (it == evenements.fin()){
+				dispo = nbVoit > 0;
+			}
+			else { // verifie jusqua retour arrete si dispo faux ou rfinu a la fin
+				dispo = nbVoit > 0;
+				for (; dispo && it != evenements.fin() && it.cle() < retour; ++it){
+					nbVoit += it.valeur();
+					// cerr << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << finl;
+					dispo = nbVoit > 0;
+				}
+			}
+
+			if (dispo) {
+				//if (dispo) cerr << "ok" << finl;
+
+				nbLibre = (nbPlaces - nbVoit) + 1; // la prise de possesion libère une place
+
+				// la place doit etre disponible a partir de retour jusqua la fin des evenements actuels
+
+				// continue a calculer jusqua fin et verifie si place libres
+				//cerr << "commence a verifier retour" << finl;
+				if (it == evenements.fin()) {
+					dispo = nbLibre > 0;
+				}
+				else { // verifie jusqua la fin, arrete si dispo faux
+					dispo = nbLibre > 0;
+					for (; dispo && it != evenements.fin(); ++it){
+						nbLibre -= it.valeur();
+						//cerr << it->first << "V = " << nbPlaces - nbLibre << ", L = " <<  nbLibre << finl;
+						dispo = nbLibre > 0;
+					}
+				}
+			}
+		}
+		// if (dispo) cerr << "ok" << finl;
+	}
+	return dispo;
+}
+
+bool Succursale::verifierDisponibilite(const Date prise,const Date retour){
     bool dispo=true;
-    int nbVoit = nbVoitures;
-    int nbLibre;
-    //cerr << "verifier disponibilite " << nomSuccursale << " " << prise << " " << retour << ": V = " << nbVoit << ", L = " << nbPlacesLibres << finl;
 
-    if (evenements.vide())
-        return nbVoitures > 0;
-    // et au moins une place libre celle qu on vient de liberer;
+	if (derniereDate<prise && 1>nbVoitureDerniereDate)
+	{
+		dispo = false;
 
-    // 1- la voiture doit etre disponible pour la duree
+	}
+	else if (derniereDate<prise && nbVoitureDerniereDate>1)
+	{
+		
+	}
+	else
+	{
+		int nbVoit = nbVoitures;
+		// cerr << "verifier disponibilite " << nomSuccursale << " " << prise << " " << retour << ": V = " << nbVoit << ", L = " << nbPlacesLibres << finl;
 
-    //itere du debut a prise (calcule etat a prise)
-    ArbreMap<Date,int>::Iterateur it = evenements.debut();
-    for (; it != evenements.fin() && it.cle() <= prise; ++it) {
-        nbVoit += it.valeur();
-      //  cerr << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << finl;
-        //assert(nbVoit >= 0);
-    }
+		if (evenements.vide())
+			return nbVoitures > 0;
+		// 1- la voiture doit etre disponible de prise a la fin (pas de retour ici)
 
-    // continue a calculer jusqua retour et verifie la disponibilite ( dispo = nbVoit > 0)
-    //cerr << "commence a verifier disponibilite" << finl;
-    if (it == evenements.fin()){
-        dispo = nbVoit > 0;
-    } else { // verifie jusqua retour arrete si dispo faux ou rfinu a la fin
-        dispo = nbVoit > 0;
-        for (;dispo && it != evenements.fin() && it.cle() < retour;++it){
-            nbVoit += it.valeur();
-           // cerr << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << finl;
-            dispo = nbVoit > 0;
-        }
-    }
+		//itere du debut a prise (calcule etat a prise)
+		ArbreMap<Date, int>::Iterateur it = evenements.debut();
+		for (; it != evenements.fin() && it.cle() <= prise; ++it) {
+			nbVoit += it.valeur();
+			//    cerr << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << finl;
+			assert(nbVoit >= 0);
+		}
 
-    if (dispo) {
-        //if (dispo) cerr << "ok" << finl;
+		// continue a calculer jusqua fin et verifie la disponibilite ( dispo = nbVoit > 0)
+		//cerr << "commence a verifier disponibilite" << finl;
+		if (it == evenements.fin()){
+			dispo = nbVoit > 0;
+		}
+		else { // verifie jusqua retour arrete si dispo faux ou rfinu a la fin
+			dispo = nbVoit > 0;
+			for (; dispo && it != evenements.fin(); ++it){
+				nbVoit += it.valeur();
+				//cerr << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << finl;
+				dispo = nbVoit > 0;
+			}
+		}
 
-        nbLibre = (nbPlaces - nbVoit) + 1; // la prise de possesion libère une place
-        
-        // la place doit etre disponible a partir de retour jusqua la fin des evenements actuels
-
-        // continue a calculer jusqua fin et verifie si place libres
-        //cerr << "commence a verifier retour" << finl;
-        if (it == evenements.fin()) {
-            dispo = nbLibre > 0;
-        } else { // verifie jusqua la fin, arrete si dispo faux
-            dispo = nbLibre > 0;
-            for (;dispo && it != evenements.fin();++it){
-                nbLibre -= it.valeur();
-                //cerr << it->first << "V = " << nbPlaces - nbLibre << ", L = " <<  nbLibre << finl;
-                dispo = nbLibre > 0;
-            }
-        }
-    }
-   // if (dispo) cerr << "ok" << finl;
-
+		// if (dispo) cerr << "ok" << finl;
+	}
     return dispo;
 }
 
-bool Succursale::verifierDisponibilite(Date prise, Date retour){
-    bool dispo=true;
-    int nbVoit = nbVoitures;
-   // cerr << "verifier disponibilite " << nomSuccursale << " " << prise << " " << retour << ": V = " << nbVoit << ", L = " << nbPlacesLibres << finl;
 
-    if (evenements.vide())
-        return nbVoitures > 0;
-    // 1- la voiture doit etre disponible de prise a la fin (pas de retour ici)
-
-    //itere du debut a prise (calcule etat a prise)
-    ArbreMap<Date,int>::Iterateur it = evenements.debut();
-    for (; it != evenements.fin() && it.cle() <= prise; ++it) {
-        nbVoit += it.valeur();
-    //    cerr << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << finl;
-        assert(nbVoit >= 0);
-    }
-
-    // continue a calculer jusqua fin et verifie la disponibilite ( dispo = nbVoit > 0)
-    //cerr << "commence a verifier disponibilite" << finl;
-    if (it == evenements.fin()){
-        dispo = nbVoit > 0;
-    } else { // verifie jusqua retour arrete si dispo faux ou rfinu a la fin
-        dispo = nbVoit > 0;
-        for (;dispo && it != evenements.fin();++it){
-            nbVoit += it.valeur();
-            //cerr << it->first << "V = " << nbVoit << ", L = " << nbPlaces - nbVoit << finl;
-            dispo = nbVoit > 0;
-        }
-    }
-
-   // if (dispo) cerr << "ok" << finl;
-    return dispo;
-}
-
-
-bool Succursale::verifierRetourPossible(Date retour){
+bool Succursale::verifierRetourPossible(const Date retour){
     bool retourOk = true;
-    int nbLibre = nbPlacesLibres;
-    //cerr << "verifier retour " << nomSuccursale << " " << retour << ": V = " << nbVoitures << ", L = " << nbLibre << finl;
+	
+	if (derniereDate<retour &&nbVoitureDerniereDate<nbPlaces)
+	{
+		
+	}
+	else if (derniereDate<retour)
+	{
+		retourOk = false;
+	}
+	else 
+	{
+		int nbLibre = nbPlacesLibres;
+		//cerr << "verifier retour " << nomSuccursale << " " << retour << ": V = " << nbVoitures << ", L = " << nbLibre << finl;
 
-    if (evenements.vide())
-        return  nbPlacesLibres > 0;
+		if (evenements.vide())
+			return  nbPlacesLibres > 0;
 
-    ArbreMap<Date, int>::Iterateur it = evenements.debut();
-    // la place doit etre disponible a partir de retour jusqua la fin des evenements actuels  !!
-    for (; it != evenements.fin() && it.cle() <= retour ; ++it) {
-        nbLibre -= it.valeur();
-       // cerr << it->first << "V = " << nbPlaces - nbLibre << ", L = " << nbLibre << finl;
-        assert(nbLibre >= 0);
-    }
+		ArbreMap<Date, int>::Iterateur it = evenements.debut();
+		// la place doit etre disponible a partir de retour jusqua la fin des evenements actuels  !!
+		for (; it != evenements.fin() && it.cle() <= retour; ++it) {
+			nbLibre -= it.valeur();
+			// cerr << it->first << "V = " << nbPlaces - nbLibre << ", L = " << nbLibre << finl;
+			assert(nbLibre >= 0);
+		}
 
-    // commence a verifier ici
-    //cerr << "commence a verifier" << finl;
-    if (it == evenements.fin()) {
-        retourOk = nbLibre > 0;
-    } else { // verifie jusqua la fin, arrete si dispo faux
-        retourOk = nbLibre > 0;
-        for (;retourOk && it != evenements.fin();++it){
-            nbLibre -= it.valeur();
-          //  cerr << it->first << "V = " << nbPlaces - nbLibre << ", L = " <<  nbLibre << finl;
-            retourOk = nbLibre > 0;
-        }
-    }
-
+		// commence a verifier ici
+		//cerr << "commence a verifier" << finl;
+		if (it == evenements.fin()) {
+			retourOk = nbLibre > 0;
+		}
+		else { // verifie jusqua la fin, arrete si dispo faux
+			retourOk = nbLibre > 0;
+			for (; retourOk && it != evenements.fin(); ++it){
+				nbLibre -= it.valeur();
+				//  cerr << it->first << "V = " << nbPlaces - nbLibre << ", L = " <<  nbLibre << finl;
+				retourOk = nbLibre > 0;
+			}
+		}
+	}
    // if (retourOk) cerr << "ok" << finl;
 
     return retourOk;
 }
 
 void Succursale::ajouterEvenementDepart(Date date) {
+	if (derniereDate < date)
+		derniereDate = date;
+	nbVoitureDerniereDate -= 1;
     evenements[date] -= 1;
 }
 void Succursale::ajouterEvenementRetour(Date date){
-    evenements[date] += 1;
+    
+	if (derniereDate < date)
+		derniereDate = date;
+	nbVoitureDerniereDate += 1;
+	evenements[date] += 1;
 }
 
 istream& operator >> (istream& is, Succursale& succursale) {
     is >> succursale.nomSuccursale >> succursale.nbVoitures >> succursale.nbPlacesLibres;
     succursale.nbPlaces = succursale.nbVoitures + succursale.nbPlacesLibres;
+	succursale.nbVoitureDerniereDate = succursale.nbVoitures;
     return is;
 }
 

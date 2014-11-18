@@ -10,7 +10,8 @@ using namespace std;
 class Succursale{
   public:
     // À compléter...
-    Succursale(){}
+    Succursale() :derniereDate(0){
+	}
     Succursale(std::string _nom, int _nbVoitures, int _nbPlacesLibres) {
         nomSuccursale = _nom;
         nbVoitures = _nbVoitures;
@@ -36,6 +37,9 @@ private:
     int nbVoitures;
     int nbPlacesLibres;
     int nbPlaces;
+
+	Date derniereDate;
+	int nbVoitureDerniereDate;
     /*
      Une reservation = deux évenements :
       1) prendre voiture a une date : la valeur  est -1 : nbVoiture -1 et NbPlaceLibre +1

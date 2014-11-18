@@ -15,7 +15,7 @@
 class Date{
   public:
     Date();
-    
+	Date(int min);
     bool operator <(const Date& date) const;
     bool operator <=(const Date& date) const;
   
